@@ -1,197 +1,128 @@
 <template>
   <a-card style="padding: 24px" id="twelve-cause-card">
-            <div style="top: 0">
-                <!--            <a-steps v-model:current="current">
-                                <a-step title="Vô Minh">
-                                    <template #icon>
-                                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                            <template #icon>
-                                                <a-image :width="25" src="/assets/images/icons/vo_minh.png" size="small"/>
-                                            </template>
-                                        </a-avatar>
-                                    </template>
-                                </a-step>
-                                <a-step title="Hành">
-                                    <template #icon>
-                                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                            <template #icon>
-                                                <a-image
-                                                    style="-webkit-transform: scaleX(-1); transform: scaleX(-1)"
-                                                    :width="25"
-                                                    src="/assets/images/icons/hanh.png"
-                                                    size="small"
-                                                />
-                                            </template>
-                                        </a-avatar>
-                                    </template>
-                                </a-step>
-                                <a-step title="Thức">
-                                    <template #icon>
-                                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                            <template #icon>
-                                                <a-image :width="25" src="/assets/images/icons/thuc.png" size="small"/>
-                                            </template>
-                                        </a-avatar>
-                                    </template>
-                                </a-step>
-                                <a-step title="Danh Sắc">
-                                    <template #icon>
-                                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                            <template #icon>
-                                                <a-image :width="25" src="/assets/images/icons/danh_sac.png" size="small"/>
-                                            </template>
-                                        </a-avatar>
-                                    </template>
-                                </a-step>
-                                <a-step title="Lục Nhập">
-                                    <template #icon>
-                                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                            <template #icon>
-                                                <a-image :width="25" src="/assets/images/icons/luc_nhap.png" size="small"/>
-                                            </template>
-                                        </a-avatar>
-                                    </template>
-                                </a-step>
-                                <a-step title="Xúc">
-                                    <template #icon>
-                                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                            <template #icon>
-                                                <a-image :width="25" src="/assets/images/icons/xuc.png" size="small"/>
-                                            </template>
-                                        </a-avatar>
-                                    </template>
-                                </a-step>
-                                <a-step title="Thọ">
-                                    <template #icon>
-                                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                            <template #icon>
-                                                <a-image :width="25" src="/assets/images/icons/tho.png" size="small"/>
-                                            </template>
-                                        </a-avatar>
-                                    </template>
-                                </a-step>
-                                <a-step title="Ái">
-                                    <template #icon>
-                                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                            <template #icon>
-                                                <a-image :width="25" src="/assets/images/icons/ai.png" size="small"/>
-                                            </template>
-                                        </a-avatar>
-                                    </template>
-                                </a-step>
-                                <a-step title="Thủ">
-                                    <template #icon>
-                                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                            <template #icon>
-                                                <a-image :width="25" src="/assets/images/icons/thu.png" size="small"/>
-                                            </template>
-                                        </a-avatar>
-                                    </template>
-                                </a-step>
-                                <a-step title="Hữu">
-                                    <template #icon>
-                                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                            <template #icon>
-                                                <a-image :width="25" src="/assets/images/icons/huu.png" size="small"/>
-                                            </template>
-                                        </a-avatar>
-                                    </template>
-                                </a-step>
-                                <a-step title="Sanh">
-                                    <template #icon>
-                                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                            <template #icon>
-                                                <a-image :width="25" src="/assets/images/icons/sanh.png" size="small"/>
-                                            </template>
-                                        </a-avatar>
-                                    </template>
-                                </a-step>
-                                <a-step title="Lão Tử">
-                                    <template #icon>
-                                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                            <template #icon>
-                                                <a-image :width="25" src="/assets/images/icons/lao_tu.png" size="small"/>
-                                            </template>
-                                        </a-avatar>
-                                    </template>
-                                </a-step>
-                            </a-steps>-->
-            </div>
-
-
-
-            <div class="two-candles">
-                <div class="wrapper">
-                    <div class="candles">
-                        <div class="light__wave"/>
-                        <div class="candle1">
-                            <div class="candle1__body">
-                                <div class="candle1__eyes">
-                                    <span class="candle1__eyes-one"/>
-                                    <span class="candle1__eyes-two"/>
-                                </div>
-                                <div class="candle1__mouth"/>
-                            </div>
-                            <div class="candle1__stick"/>
-                        </div>
-
-                        <div class="candle2">
-                            <div class="candle2__body">
-                                <div class="candle2__eyes">
-                                    <div class="candle2__eyes-one"/>
-                                    <div class="candle2__eyes-two"/>
-                                </div>
-                            </div>
-                            <div class="candle2__stick"/>
-                        </div>
-                        <div class="candle2__fire"/>
-                        <div class="sparkles-one"/>
-                        <div class="sparkles-two"/>
-                        <div class="candle__smoke-one"/>
-                        <div class="candle__smoke-two"/>
-
-                    </div>
-                    <div class="floor"/>
-                </div>
-                <div class="wrapper">
-                    <div class="candles">
-                        <div class="light__wave"/>
-                        <div class="candle1">
-                            <div class="candle1__body">
-                                <div class="candle1__eyes">
-                                    <span class="candle1__eyes-one"/>
-                                    <span class="candle1__eyes-two"/>
-                                </div>
-                                <div class="candle1__mouth"/>
-                            </div>
-                            <div class="candle1__stick"/>
-                        </div>
-
-                        <div class="candle2">
-                            <div class="candle2__body">
-                                <div class="candle2__eyes">
-                                    <div class="candle2__eyes-one"/>
-                                    <div class="candle2__eyes-two"/>
-                                </div>
-                            </div>
-                            <div class="candle2__stick"/>
-                        </div>
-                        <div class="candle2__fire"/>
-                        <div class="sparkles-one"/>
-                        <div class="sparkles-two"/>
-                        <div class="candle__smoke-one"/>
-                        <div class="candle__smoke-two"/>
-
-                    </div>
-                    <div class="floor"/>
-                </div>
-            </div>
-
-        </a-card>
+    <div style="top: 0" title="Thập Nhị Nhân Duyên (12-linked chain of causation)">
+        <a-steps v-model:current="current">
+            <a-step title="Vô Minh" description="(Ignorance)">
+                <template #icon>
+                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
+                        <template #icon>
+                            <a-image :width="25" src="/assets/images/icons/vo_minh.png" size="small"/>
+                        </template>
+                    </a-avatar>
+                </template>
+            </a-step>
+            <a-step title="Hành" description="(Actions)">
+                <template #icon>
+                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
+                        <template #icon>
+                            <a-image
+                                style="-webkit-transform: scaleX(-1); transform: scaleX(-1)"
+                                :width="25"
+                                src="/assets/images/icons/hanh.png"
+                                size="small"
+                            />
+                        </template>
+                    </a-avatar>
+                </template>
+            </a-step>
+            <a-step title="Thức" description="(Consciousness)">
+                <template #icon>
+                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
+                        <template #icon>
+                            <a-image :width="25" src="/assets/images/icons/thuc.png" size="small"/>
+                        </template>
+                    </a-avatar>
+                </template>
+            </a-step>
+            <a-step title="Danh Sắc" description="(Name and Form)">
+                <template #icon>
+                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
+                        <template #icon>
+                            <a-image :width="25" src="/assets/images/icons/danh_sac.png" size="small"/>
+                        </template>
+                    </a-avatar>
+                </template>
+            </a-step>
+            <a-step title="Lục Nhập" description="(Six Entrances)">
+                <template #icon>
+                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
+                        <template #icon>
+                            <a-image :width="25" src="/assets/images/icons/luc_nhap.png" size="small"/>
+                        </template>
+                    </a-avatar>
+                </template>
+            </a-step>
+            <a-step title="Xúc" description="(Contact)">
+                <template #icon>
+                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
+                        <template #icon>
+                            <a-image :width="25" src="/assets/images/icons/xuc.png" size="small"/>
+                        </template>
+                    </a-avatar>
+                </template>
+            </a-step>
+            <a-step title="Thọ" description="(Sensation)">
+                <template #icon>
+                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
+                        <template #icon>
+                            <a-image :width="25" src="/assets/images/icons/tho.png" size="small"/>
+                        </template>
+                    </a-avatar>
+                </template>
+            </a-step>
+            <a-step title="Ái" description="(Desire)">
+                <template #icon>
+                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
+                        <template #icon>
+                            <a-image :width="25" src="/assets/images/icons/ai.png" size="small"/>
+                        </template>
+                    </a-avatar>
+                </template>
+            </a-step>
+            <a-step title="Thủ" description="(Clinging)">
+                <template #icon>
+                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
+                        <template #icon>
+                            <a-image :width="25" src="/assets/images/icons/thu.png" size="small"/>
+                        </template>
+                    </a-avatar>
+                </template>
+            </a-step>
+            <a-step title="Hữu" description="(Existence)">
+                <template #icon>
+                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
+                        <template #icon>
+                            <a-image :width="25" src="/assets/images/icons/huu.png" size="small"/>
+                        </template>
+                    </a-avatar>
+                </template>
+            </a-step>
+            <a-step title="Sanh" description="(Birth)">
+                <template #icon>
+                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
+                        <template #icon>
+                            <a-image :width="25" src="/assets/images/icons/sanh.png" size="small"/>
+                        </template>
+                    </a-avatar>
+                </template>
+            </a-step>
+            <a-step title="Lão Tử" description="(Aging and Death)">
+                <template #icon>
+                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
+                        <template #icon>
+                            <a-image :width="25" src="/assets/images/icons/lao_tu.png" size="small"/>
+                        </template>
+                    </a-avatar>
+                </template>
+            </a-step>
+        </a-steps>
+    </div>
+  </a-card>
 </template>
 
 <script setup>
 
+const current = ref(0);
 </script>
 
 <style scoped lang="scss">

@@ -1,6 +1,9 @@
 <template>
     <div class="homepage-wrapper">
-        <div>
+        <div class="top-parts">
+            <TwelveCauses />
+        </div>
+        <div class="bottom-parts">
 <!--                Bubbles-->
             <div class="bubble x1"></div>
             <div class="bubble x2"></div>
@@ -14,17 +17,17 @@
             <div class="bubble x10"></div>
 
 <!--                Turtle-->
-            <div class="turtle">
+            <div class="turtle" title="Rùa Mù (Blind Turtle)">
                 <div class="turtle__head"></div>
                 <div class="turtle__legs -left"></div>
                 <div class="turtle__legs -right"></div>
                 <div class="turtle__tail"></div>
-
                 <div class="turtle__shell">
                     <div></div>
                 </div>
             </div>
-            <div class="ocean">
+
+            <div class="ocean" title="Biển Sinh Tử (Sea of Life and Death)">
 <!--                Waves-->
                 <div class="wave"></div>
                 <div class="wave"></div>
@@ -43,7 +46,6 @@
 
 
 body {
-    height: 100%;
     background: radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
 }
 .homepage-wrapper {
@@ -53,8 +55,6 @@ body {
     left: 0;
     height: 100vh;
     overflow: hidden;
-
-
 
     // Sea waves
     .ocean {
@@ -105,9 +105,10 @@ body {
       &::before, &::after {
         top: 20px;
         width: 8px;
-        height: 8px;
+        height: 3px;
         border-radius: 50%;
-        background-color: #6A757A;
+        background-color: white;
+        box-shadow: 1px 1px 1px 1px lightgray;
         content: '';
         position: absolute;
       }
@@ -225,7 +226,6 @@ body {
     75%  {transform: translate(-50%, -50%) rotate(-45deg)}
     100% {transform: translate(-50%, -50%) rotate(-40deg)}
   }
-
   @keyframes walking-turtle-02 {
     0% 	 {transform: translate(-50%, -50%) rotate(40deg)}
     25%  {transform: translate(-50%, -50%) rotate(45deg)}
@@ -233,7 +233,6 @@ body {
     75%  {transform: translate(-50%, -50%) rotate(45deg)}
     100% {transform: translate(-50%, -50%) rotate(30deg)}
   }
-
   @keyframes walking-turtle-03 {
     0% 	 {transform: translate(-50%, -50%) rotate(0deg)}
     25%  {transform: translate(-50%, -50%) rotate(3deg)}
@@ -251,7 +250,6 @@ body {
             margin-left: -1600px;
         }
     }
-
     @keyframes swell {
         0%, 100% {
             transform: translate3d(0,-25px,0);
@@ -271,7 +269,6 @@ body {
             margin-top: -100%;
         }
     }
-
     @-moz-keyframes animateBubble {
         0% {
             margin-top: 1000px;
@@ -280,7 +277,6 @@ body {
             margin-top: -100%;
         }
     }
-
     @keyframes animateBubble {
         0% {
             margin-top: 1000px;
@@ -289,7 +285,6 @@ body {
             margin-top: -100%;
         }
     }
-
     @-webkit-keyframes sideWays {
         0% {
             margin-left:0px;
@@ -298,7 +293,6 @@ body {
             margin-left:50px;
         }
     }
-
     @-moz-keyframes sideWays {
         0% {
             margin-left:0px;
@@ -307,7 +301,6 @@ body {
             margin-left:50px;
         }
     }
-
     @keyframes sideWays {
         0% {
             margin-left:0px;
@@ -330,7 +323,6 @@ body {
         -moz-transform: scale(0.6);
         transform: scale(0.6);
     }
-
     .x2 {
         -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
         -moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
@@ -343,7 +335,6 @@ body {
         -moz-transform: scale(0.4);
         transform: scale(0.4);
     }
-
     .x3 {
         -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
         -moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
@@ -356,7 +347,6 @@ body {
         -moz-transform: scale(0.7);
         transform: scale(0.7);
     }
-
     .x4 {
         -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
         -moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
@@ -369,7 +359,6 @@ body {
         -moz-transform: scale(0.3);
         transform: scale(0.3);
     }
-
     .x5 {
         -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
         -moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
@@ -382,7 +371,6 @@ body {
         -moz-transform: scale(0.5);
         transform: scale(0.5);
     }
-
     .x6 {
         -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
         -moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
@@ -395,7 +383,6 @@ body {
         -moz-transform: scale(0.8);
         transform: scale(0.8);
     }
-
     .x7 {
         -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
         -moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
@@ -408,7 +395,6 @@ body {
         -moz-transform: scale(0.4);
         transform: scale(0.4);
     }
-
     .x8 {
         -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
         -moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
@@ -421,7 +407,6 @@ body {
         -moz-transform: scale(0.3);
         transform: scale(0.3);
     }
-
     .x9 {
         -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
         -moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
@@ -434,7 +419,6 @@ body {
         -moz-transform: scale(0.6);
         transform: scale(0.6);
     }
-
     .x10 {
         -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
         -moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
@@ -463,7 +447,6 @@ body {
         position: absolute;
         width: 200px;
     }
-
     .bubble:after {
         background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
         background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
@@ -494,10 +477,6 @@ body {
             font-weight: 700;
             color: grey;
         }
-
-
-
-
 
     }
 }

@@ -11,6 +11,7 @@
     "formatcode": "npx prettier --write ."
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.6",
     "@nuxt/content": "^2.12.0",
     "ant-design-vue": "3.2.20",
     "dayjs": "^1.11.10",
