@@ -1,935 +1,505 @@
 <template>
-    <a-card style="padding: 24px" id="homepage-card">
-        <div style="top: 0">
-<!--            <a-steps v-model:current="current">
-                <a-step title="Vô Minh">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image :width="25" src="/assets/images/icons/vo_minh.png" size="small"/>
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step title="Hành">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image
-                                    style="-webkit-transform: scaleX(-1); transform: scaleX(-1)"
-                                    :width="25"
-                                    src="/assets/images/icons/hanh.png"
-                                    size="small"
-                                />
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step title="Thức">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image :width="25" src="/assets/images/icons/thuc.png" size="small"/>
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step title="Danh Sắc">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image :width="25" src="/assets/images/icons/danh_sac.png" size="small"/>
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step title="Lục Nhập">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image :width="25" src="/assets/images/icons/luc_nhap.png" size="small"/>
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step title="Xúc">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image :width="25" src="/assets/images/icons/xuc.png" size="small"/>
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step title="Thọ">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image :width="25" src="/assets/images/icons/tho.png" size="small"/>
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step title="Ái">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image :width="25" src="/assets/images/icons/ai.png" size="small"/>
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step title="Thủ">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image :width="25" src="/assets/images/icons/thu.png" size="small"/>
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step title="Hữu">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image :width="25" src="/assets/images/icons/huu.png" size="small"/>
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step title="Sanh">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image :width="25" src="/assets/images/icons/sanh.png" size="small"/>
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step title="Lão Tử">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image :width="25" src="/assets/images/icons/lao_tu.png" size="small"/>
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-            </a-steps>-->
+    <div class="homepage-wrapper">
+        <div>
+<!--                Bubbles-->
+            <div class="bubble x1"></div>
+            <div class="bubble x2"></div>
+            <div class="bubble x3"></div>
+            <div class="bubble x4"></div>
+            <div class="bubble x5"></div>
+            <div class="bubble x6"></div>
+            <div class="bubble x7"></div>
+            <div class="bubble x8"></div>
+            <div class="bubble x9"></div>
+            <div class="bubble x10"></div>
 
-            <a-steps v-model:current="current">
-                <a-step title="Vô Minh">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image :width="25" src="/assets/images/icons/vo_minh.png" size="small"/>
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step title="Hành">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image
-                                    style="-webkit-transform: scaleX(-1); transform: scaleX(-1)"
-                                    :width="25"
-                                    src="/assets/images/icons/hanh.png"
-                                    size="small"
-                                />
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step title="Thức">
-                    <template #icon>
-                        <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                            <template #icon>
-                                <a-image :width="25" src="/assets/images/icons/thuc.png" size="small"/>
-                            </template>
-                        </a-avatar>
-                    </template>
-                </a-step>
-                <a-step>
-                    <template #icon></template>
-                    <template #title>
-                        <a-steps v-model:current="current" direction="vertical">
-                            <a-step title="Danh Sắc">
-                                <template #icon>
-                                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                        <template #icon>
-                                            <a-image :width="25" src="/assets/images/icons/danh_sac.png" size="small"/>
-                                        </template>
-                                    </a-avatar>
-                                </template>
-                            </a-step>
-                            <a-step title="Lục Nhập">
-                                <template #icon>
-                                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                        <template #icon>
-                                            <a-image :width="25" src="/assets/images/icons/luc_nhap.png" size="small"/>
-                                        </template>
-                                    </a-avatar>
-                                </template>
-                            </a-step>
-                            <a-step title="Xúc">
-                                <template #icon>
-                                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                        <template #icon>
-                                            <a-image :width="25" src="/assets/images/icons/xuc.png" size="small"/>
-                                        </template>
-                                    </a-avatar>
-                                </template>
-                            </a-step>
-                            <a-step title="Thọ">
-                                <template #icon></template>
-                                <a-steps v-model:current="current">
-                                    <a-step title="Thọ">
-                                        <template #icon>
-                                            <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                                <template #icon>
-                                                    <a-image :width="25" src="/assets/images/icons/tho.png" size="small"/>
-                                                </template>
-                                            </a-avatar>
-                                        </template>
-                                    </a-step>
-                                    <a-step title="Ái">
-                                        <template #icon>
-                                            <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                                <template #icon>
-                                                    <a-image :width="25" src="/assets/images/icons/ai.png" size="small"/>
-                                                </template>
-                                            </a-avatar>
-                                        </template>
-                                    </a-step>
-                                    <a-step title="Thủ">
-                                        <template #icon>
-                                            <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                                <template #icon>
-                                                    <a-image :width="25" src="/assets/images/icons/thu.png" size="small"/>
-                                                </template>
-                                            </a-avatar>
-                                        </template>
-                                    </a-step>
-                                    <a-step title="Hữu">
-                                        <template #icon></template>
-                                        <a-steps v-model:current="current" direction="vertical">
-                                            <a-step title="Hữu">
-                                                <template #icon>
-                                                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                                        <template #icon>
-                                                            <a-image :width="25" src="/assets/images/icons/huu.png" size="small"/>
-                                                        </template>
-                                                    </a-avatar>
-                                                </template>
-                                            </a-step>
-                                            <a-step title="Sanh">
-                                                <template #icon>
-                                                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                                        <template #icon>
-                                                            <a-image :width="25" src="/assets/images/icons/sanh.png" size="small"/>
-                                                        </template>
-                                                    </a-avatar>
-                                                </template>
-                                            </a-step>
-                                            <a-step title="Lão Tử">
-                                                <template #icon>
-                                                    <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
-                                                        <template #icon>
-                                                            <a-image :width="25" src="/assets/images/icons/lao_tu.png" size="small"/>
-                                                        </template>
-                                                    </a-avatar>
-                                                </template>
-                                            </a-step>
-                                        </a-steps>
-                                    </a-step>
-                                </a-steps>
-                            </a-step>
-                        </a-steps>
-                    </template>
-                </a-step>
-            </a-steps>
-        </div>
-        <div class="two-candles">
-            <div class="wrapper">
-                <div class="candles">
-                    <div class="light__wave"/>
-                    <div class="candle1">
-                        <div class="candle1__body">
-                            <div class="candle1__eyes">
-                                <span class="candle1__eyes-one"/>
-                                <span class="candle1__eyes-two"/>
-                            </div>
-                            <div class="candle1__mouth"/>
-                        </div>
-                        <div class="candle1__stick"/>
-                    </div>
+<!--                Turtle-->
+            <div class="turtle">
+                <div class="turtle__head"></div>
+                <div class="turtle__legs -left"></div>
+                <div class="turtle__legs -right"></div>
+                <div class="turtle__tail"></div>
 
-                    <div class="candle2">
-                        <div class="candle2__body">
-                            <div class="candle2__eyes">
-                                <div class="candle2__eyes-one"/>
-                                <div class="candle2__eyes-two"/>
-                            </div>
-                        </div>
-                        <div class="candle2__stick"/>
-                    </div>
-                    <div class="candle2__fire"/>
-                    <div class="sparkles-one"/>
-                    <div class="sparkles-two"/>
-                    <div class="candle__smoke-one"/>
-                    <div class="candle__smoke-two"/>
-
+                <div class="turtle__shell">
+                    <div></div>
                 </div>
-                <div class="floor"/>
             </div>
-            <div class="wrapper">
-                <div class="candles">
-                    <div class="light__wave"/>
-                    <div class="candle1">
-                        <div class="candle1__body">
-                            <div class="candle1__eyes">
-                                <span class="candle1__eyes-one"/>
-                                <span class="candle1__eyes-two"/>
-                            </div>
-                            <div class="candle1__mouth"/>
-                        </div>
-                        <div class="candle1__stick"/>
-                    </div>
-
-                    <div class="candle2">
-                        <div class="candle2__body">
-                            <div class="candle2__eyes">
-                                <div class="candle2__eyes-one"/>
-                                <div class="candle2__eyes-two"/>
-                            </div>
-                        </div>
-                        <div class="candle2__stick"/>
-                    </div>
-                    <div class="candle2__fire"/>
-                    <div class="sparkles-one"/>
-                    <div class="sparkles-two"/>
-                    <div class="candle__smoke-one"/>
-                    <div class="candle__smoke-two"/>
-
-                </div>
-                <div class="floor"/>
+            <div class="ocean">
+<!--                Waves-->
+                <div class="wave"></div>
+                <div class="wave"></div>
             </div>
         </div>
 
-    </a-card>
+    </div>
 </template>
 
 <script setup>
-import {
-    QuestionCircleOutlined,
-} from "@ant-design/icons-vue";
-
-const current = ref(0);
-
 
 
 </script>
 
-<style lang="scss">
-// colors
-$lightsOnBg: #FEF4AD;
-$lightsOutBg: #F8AE39;
-$candleColor:#FFFFFD;
-$candleShadow:#673C63;
-$floorColor:#AD9598;
-$fireColor:#FF9800;
-$fireColor2:#FFC107;
-$fireShadow: #E7C980;
-$angerColor:#F44336;
-$primaryColor: #FEF4AD;
-$secondaryColor:rgb(0,0,0);
-$candleInsetShadow:#95c6f2;
-$smokeColor:grey;
+<style scoped lang="scss">
 
-//sizes
-$floorWidth: 350px;
-$floorHeight:5px;
-$candleWidth:35px;
-$candleHeight:100px;
-$stickWidth:3px;
-$stickHeight:15px;
 
-#homepage-card {
-    .ant-steps-item-title {
-        font-family: Lobster;
-        font-weight: 800;
-        color: grey;
-    }
-
-    .ant-steps-item:last-child {
-        height: 500px;
-    }
-
-/*  body {
-    background-color:$lightsOnBg;
-    animation:change-background 3s infinite linear;
-  }
- .two-candles {
-     position: relative;
-     top: 300px;
-     .wrapper {
-         position:absolute;
-         left:12%;
-         top:70%;
-         transform:scale(1.5,1.5) translate(-50%,-50%);
-     }
-     .floor {
-         position:absolute;
-         left:50%;
-         top:50%;
-         width:$floorWidth;
-         height:$floorHeight;
-         background:$candleShadow;
-         transform:translate(-50%,-50%);
-         box-shadow:0px 2px 5px #111;
-         z-index:2;
-     }
-     .candles {
-         position:absolute;
-         left:50%;
-         top:50%;
-         width:250px;
-         height:150px;
-         // background:$secondaryColor;
-         // opacity:0.8;
-         transform:translate(-50%,-100%);
-         z-index:1;
-     }
-     .candle1 {
-         position:absolute;
-         left:50%;
-         top:50%;
-         width:$candleWidth;
-         height:$candleHeight;
-         background:#fff;
-         border:3px solid $candleShadow;
-         border-bottom:0px;
-         border-radius:3px;
-         transform-origin:center right;
-         transform:translate(60%,-25%);
-         box-shadow: -2px 0px 0px $candleInsetShadow inset;
-         animation:expand-body 3s infinite linear;
-     }
-     .candle1__stick,.candle2__stick {
-         position:absolute;
-         left:50%;
-         top:0%;
-         width:$stickWidth;
-         height:$stickHeight;
-         background:$candleShadow;
-         border-radius:8px;
-         transform:translate(-50%,-100%);
-     }
-     .candle2__stick {
-         height:$stickHeight*0.8;
-         transform-origin: bottom center;
-         animation:stick-animation 3s infinite linear;
-     }
-     .candle1__eyes,.candle2__eyes {
-         position:absolute;
-         left:50%;
-         top:0%;
-         width:$candleWidth;
-         height:30px;
-         transform:translate(-50%,0%);
-     }
-     .candle1__eyes-one {
-         position:absolute;
-         left:30%;
-         top:20%;
-         width:5px;
-         height:5px;
-         border-radius:100%;
-         background:$candleShadow;
-         transform:translate(-70%,0%);
-         animation:blink-eyes 3s infinite linear;
-     }
-     .candle1__eyes-two {
-         position:absolute;
-         left:70%;
-         top:20%;
-         width:5px;
-         height:5px;
-         border-radius:100%;
-         background:$candleShadow;
-         transform:translate(-70%,0%);
-         animation:blink-eyes 3s infinite linear;
-     }
-     .candle1__mouth {
-         position:absolute;
-         left:40%;
-         top:20%;
-         width:0px;
-         height:0px;
-         border-radius:20px;
-         background:$candleShadow;
-         transform:translate(-50%,-50%);
-         animation: uff 3s infinite linear;
-     }
-     .candle__smoke-one {
-         position:absolute;
-         left:30%;
-         top:50%;
-         width:30px;
-         height:3px;
-         background:$smokeColor;
-         transform:translate(-50%,-50%);
-         animation:move-left 3s infinite linear;
-     }
-     .candle__smoke-two {
-         position:absolute;
-         left:30%;
-         top:40%;
-         width:10px;
-         height:10px;
-         border-radius:10px;
-         background:$smokeColor;
-         transform:translate(-50%,-50%);
-         animation:move-top 3s infinite linear;
-     }
-
-     .candle2 {
-         position:absolute;
-         left:20%;
-         top:65%;
-         width:$candleWidth*1.20;
-         height:$candleHeight*0.60;
-         background:#fff;
-         border:3px solid $candleShadow;
-         border-bottom:0px;
-         border-radius:3px;
-         transform:translate(60%,-15%);
-         transform-origin:center right;
-         box-shadow: -2px 0px 0px $candleInsetShadow inset;
-         animation: shake-left 3s infinite linear;
-     }
-     .candle2__eyes-one {
-         position:absolute;
-         left:30%;
-         top:50%;
-         width:5px;
-         height:5px;
-         display:inline-block;
-         border:0px solid $candleShadow;
-         border-radius:100%;
-         float:left;
-         background:$candleShadow;
-         transform:translate(-80%,0%);
-         animation:changeto-lower 3s infinite linear;
-     }
-     .candle2__eyes-two  {
-         position:absolute;
-         left:70%;
-         top:50%;
-         width:5px;
-         height:5px;
-         display:inline-block;
-         border:0px solid $candleShadow;
-         border-radius:100%;
-         float:left;
-         background:$candleShadow;
-         transform:translate(-80%,0%);
-         animation:changeto-greater 3s infinite linear;
-
-     }
-     .light__wave {
-         position:absolute;
-         top:35%;
-         left:35%;
-         width:75px;
-         height:75px;
-         border-radius:100%;
-         z-index:0;
-         transform:translate(-25%,-50%) scale(2.5,2.5);
-         border:2px solid rgba(255,255,255,0.2);
-         animation:expand-light 3s infinite linear;
-     }
-     .candle2__fire {
-         position:absolute;
-         top:50%;
-         left:40%;
-         display: block;
-         width: 16px;
-         height: 20px;
-         background-color: red;
-         border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-         background:$fireColor;
-         transform:translate(-50%,-50%);
-         animation: dance-fire 3s infinite linear;
-     }
-     //animations
-
-     //animation for blinking eyes
-     @keyframes blink-eyes{
-         0%,35%
-         {
-             opacity:1;
-             transform:translate(-70%,0%);
-         }
-         36%,39%
-         {
-             opacity:0;
-             transform:translate(-70%,0%);
-         }
-         40%
-         {
-             opacity:1;
-             transform:translate(-70%,0%);
-         }
-         50%,65%
-         {
-             transform:translate(-140%,0%);
-         }
-         66%
-         {
-             transform:translate(-70%,0%);
-         }
-     }
-     @keyframes expand-body{
-         0%,40%
-         {
-             transform:scale(1,1) translate(60%,-25%);
-         }
-         45%,55%
-         {
-             transform:scale(1.1,1.1) translate(60%,-28%);
-         }
-         60%
-         {
-             transform:scale(0.89,0.89) translate(60%,-25%);
-         }
-         65%
-         {
-             transform:scale(1,1) translate(60%,-25%);
-
-         }
-         70%
-         {
-             transform:scale(0.95,0.95) translate(60%,-25%);
-         }
-         75%
-         {
-             transform:scale(1,1) translate(60%,-25%);
-         }
-
-     }
-
-     @keyframes uff{
-         0%,40%{
-             width:0px;
-             height:0px;
-         }
-         50%,54%
-         {
-             width:15px;
-             height:15px;
-             left:30%;
-         }
-         59%
-         {
-             width:5px;
-             height:5px;
-             left:20%;
-         }
-         62%
-         {
-             width:2px;
-             height:2px;
-             left:20%;
-         }
-         67%
-         {
-             width:0px;
-             height:0px;
-             left:30%;
-         }
-
-     }
-
-     @keyframes change-background{
-         0%,59%,98%,100%{
-             background:$lightsOnBg;
-         }
-         61%,97%
-         {
-             background:$lightsOutBg;
-         }
-
-     }
-     @keyframes move-left{
-         0%,59%,100%
-         {
-             width:0px;
-             left:40%;
-         }
-         60%
-         {
-             width:30px;
-             left:30%;
-         }
-         68%
-         {
-             width:0px;
-             left:20%;
-         }
-     }
-
-     @keyframes move-top{
-         0%,64%,100%
-         {
-             width:0px;
-             height:0px;
-             top:0%;
-         }
-         65%
-         {
-             width:10px;
-             height:10px;
-             top:40%;
-             left:40%;
-         }
-         80%
-         {
-             width:0px;
-             height:0px;
-             top:20%;
-         }
-     }
-     @keyframes shake-left{
-         0%,40%{
-             left:20%;
-             transform:translate(60%,-15%);
-         }
-         50%,54%
-         {
-             left:20%;
-             transform:translate(60%,-15%);
-         }
-         59%
-         {
-             left:20%;
-             transform:translate(60%,-15%);
-         }
-         62%
-         {
-             left:18%;
-             transform:translate(60%,-15%);
-         }
-         65%
-         {
-             left:21%;
-             transform:translate(60%,-15%);
-         }
-         67%
-         {
-             left:20%;
-             transform:translate(60%,-15%);
-         }
-         75%
-         {
-             left:20%;
-             transform:scale(1.15,0.85) translate(60%,-15%);
-             background:#fff;
-             border-color:$candleShadow;
-
-         }
-
-         // 80%
-         // {
-         //   background:$angerColor;
-         //   alpha:0.5;
-         //   border-color:$angerColor;
-         // }
-
-         91%
-         {
-             left:20%;
-             transform:scale(1.18,0.82) translate(60%,-10%);
-             background:$angerColor;
-             border-color:$angerColor;
-             box-shadow: -2px 0px 0px $angerColor inset;
-         }
-         92%
-         {
-             left:20%;
-             transform:scale(0.85,1.15) translate(60%,-15%);
-         }
-         95%
-         {
-             left:20%;
-             transform:scale(1.05,0.95) translate(60%,-15%);
-         }
-         97%
-         {
-             left:20%;
-             transform:scale(1.0,1.0) translate(60%,-15%);
-         }
-
-     }
-     @keyframes stick-animation{
-         0%,40%{
-             left:50%;
-             top:0%;
-             transform:translate(-50%,-100%);
-         }
-         50%,54%
-         {
-             left:50%;
-             top:0%;
-             transform:translate(-50%,-100%);
-         }
-         59%
-         {
-             left:50%;
-             top:0%;
-             transform:translate(-50%,-100%);
-         }
-         62%
-         {
-             left:50%;
-             top:0%;
-             transform:rotateZ(-15deg) translate(-50%,-100%);
-         }
-         65%
-         {
-             left:50%;
-             top:0%;
-             transform:rotateZ(15deg) translate(-50%,-100%);
-         }
-         70%
-         {
-             left:50%;
-             top:0%;
-             transform:rotateZ(-5deg) translate(-50%,-100%);
-         }
-         72%
-         {
-             left:50%;
-             top:0%;
-             transform:rotateZ(5deg) translate(-50%,-100%);
-         }
-         74%,84%
-         {
-             left:50%;
-             top:0%;
-             transform:rotateZ(0deg) translate(-50%,-100%);
-         }
-         85%
-         {
-             transform:rotateZ(180deg) translate(0%,120%);
-         }
-         92%
-         {
-             left:50%;
-             top:0%;
-             transform:translate(-50%,-100%);
-         }
-
-     }
-     @keyframes expand-light{
-         10%,29%,59%,89%
-         {
-             transform:translate(-25%,-50%) scale(0,0);
-             border:2px solid rgba(255,255,255,0);
-         }
-         90%,20%,50%
-         {
-             transform:translate(-25%,-50%) scale(1,1);
-         }
-         95%,96%,26%,27%,56%,57%
-         {
-             transform:translate(-25%,-50%) scale(2.0,2.0);
-             border:2px solid rgba(255,255,255,0.5);
-         }
-         0%,28%,58%,100%
-         {
-             transform:translate(-25%,-50%) scale(2.5,2.5);
-             border:2px solid rgba(255,255,255,0.2);
-         }
-
-     }
-     @keyframes dance-fire{
-         59%,89%
-         {
-             left:40%;
-             width:0px;
-             height:0px;
-         }
-         90%,0%,7%,15%,23%,31%,39%,47%,55%
-         {
-             left:40.8%;
-             width:16px;
-             height:20px;
-             background:$fireColor2;
-         }
-         94%,3%,11%,19%,27%,35%,43%,51%,58%
-         {
-             left:41.2%;
-             width:16px;
-             height:20px;
-             background:$fireColor;
-         }
-     }
-     @keyframes changeto-lower{
-         0%,70%,90%
-         {
-             padding:0px;
-             display:inline-block;
-             border-radius:100%;
-             background:$candleShadow;
-             border-width:0 0 0 0;
-             border:0px solid $candleShadow;
-             transform:translate(-90%,0%);
-         }
-         71%,89%
-         {
-             background:none;
-             border: solid $candleShadow;
-             border-radius:0px;
-             border-width: 0 2px 2px 0;
-             display:inline-block;
-             padding: 1px;
-             float:left;
-             transform-origin:bottom left;
-             transform: rotate(-45deg) translate(-50%,-65%);
-             -webkit-transform: rotate(-45deg) translate(-50%,-65%);
-         }
-     }
-
-     @keyframes changeto-greater{
-         0%,70%,90%
-         {
-             top:50%;
-             padding:0px;
-             display:inline-block;
-             border-radius:100%;
-             background:$candleShadow;
-             border-width:0 0 0 0;
-             border:0px solid $candleShadow;
-             transform:translate(-80%,0%);
-         }
-         71%,89%
-         {
-             top:30%;
-             background:none;
-             border: solid $candleShadow;
-             border-radius:0px;
-             border-width: 0 2px 2px 0;
-             display:inline-block;
-             padding: 1px;
-             float:left;
-             transform-origin:bottom left;
-             transform: rotate(135deg) translate(-80%,20%);
-             -webkit-transform: rotate(135deg) translate(-80%,20%);
-         }
-     }
- }*/
-
+body {
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
 }
+.homepage-wrapper {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    overflow: hidden;
+
+
+
+    // Sea waves
+    .ocean {
+        height: 5%;
+        width:100%;
+        position:absolute;
+        bottom:0;
+        left:0;
+        background: #015871;
+    }
+
+    .wave {
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+        position: absolute;
+        top: -198px;
+        width: 6400px;
+        height: 198px;
+        animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .wave:nth-of-type(2) {
+        top: -175px;
+        animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+        opacity: 1;
+    }
+
+  // TURTLE
+  .turtle {
+    width: 500px;
+    height: 500px;
+    animation: walking-turtle-03 2s ease-in-out infinite alternate;
+    position: relative;
+    top: 80vh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    &__head {
+      width: 75px;
+      height: 85px;
+      border-radius: 50%;
+      background-color: #82C49F;
+      position: relative;
+      top: 22%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      &::before, &::after {
+        top: 20px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #6A757A;
+        content: '';
+        position: absolute;
+      }
+
+      &::before {left: 13px}
+      &::after {right: 13px}
+    }
+
+    &__shell {
+      width: 220px;
+      height: 250px;
+      background-color: #6A757A;
+      border-radius: 50%;
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+
+      &::before {
+        width: 200px;
+        height: 235px;
+        background-color: #5D666B;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+      }
+
+      &::after {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        opacity: 0.1;
+        top: 0;
+      }
+
+      div {
+        width: 120px;
+        height: 80px;
+        background: #636E72;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+        }
+
+        &::before {
+          top: -30px;
+          border-left: 60px solid transparent;
+          border-right: 60px solid transparent;
+          border-bottom: 30px solid #636E72;
+        }
+
+        &::after {
+          bottom: -30px;
+          left: 0;
+          border-left: 60px solid transparent;
+          border-right: 60px solid transparent;
+          border-top: 30px solid #636E72;
+        }
+      }
+    }
+
+    &__tail {
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 35px solid #84C3A0;
+      position: absolute;
+      bottom: 18%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__legs {
+      width: 30px;
+      height: 300px;
+      border-radius: 20%;
+      background-color: #82C49F;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      &.-left {
+        transform: translate(-50%, -50%) rotate(-45deg);
+        animation: walking-turtle-01 2s ease-in-out infinite alternate;
+      }
+
+      &.-right {
+        transform: translate(-50%, -50%) rotate(45deg);
+        animation: walking-turtle-02 2s ease-in-out infinite alternate;
+      }
+    }
+  }
+
+  /* TURTLE KEYFRAMES */
+  @keyframes walking-turtle-01 {
+    0% 	 {transform: translate(-50%, -50%) rotate(-40deg)}
+    25%  {transform: translate(-50%, -50%) rotate(-45deg)}
+    50%  {transform: translate(-50%, -50%) rotate(-30deg)}
+    75%  {transform: translate(-50%, -50%) rotate(-45deg)}
+    100% {transform: translate(-50%, -50%) rotate(-40deg)}
+  }
+
+  @keyframes walking-turtle-02 {
+    0% 	 {transform: translate(-50%, -50%) rotate(40deg)}
+    25%  {transform: translate(-50%, -50%) rotate(45deg)}
+    50%  {transform: translate(-50%, -50%) rotate(35deg)}
+    75%  {transform: translate(-50%, -50%) rotate(45deg)}
+    100% {transform: translate(-50%, -50%) rotate(30deg)}
+  }
+
+  @keyframes walking-turtle-03 {
+    0% 	 {transform: translate(-50%, -50%) rotate(0deg)}
+    25%  {transform: translate(-50%, -50%) rotate(3deg)}
+    50%  {transform: translate(-50%, -50%) rotate(-1deg)}
+    75%  {transform: translate(-50%, -50%) rotate(2deg)}
+    100% {transform: translate(-50%, -50%) rotate(-1deg)}
+  }
+
+    /* WAVES KEYFRAMES */
+    @keyframes wave {
+        0% {
+            margin-left: 0;
+        }
+        100% {
+            margin-left: -1600px;
+        }
+    }
+
+    @keyframes swell {
+        0%, 100% {
+            transform: translate3d(0,-25px,0);
+        }
+        50% {
+            transform: translate3d(0,5px,0);
+        }
+    }
+
+    /* BUBBLES KEYFRAMES */
+
+    @-webkit-keyframes animateBubble {
+        0% {
+            margin-top: 1000px;
+        }
+        100% {
+            margin-top: -100%;
+        }
+    }
+
+    @-moz-keyframes animateBubble {
+        0% {
+            margin-top: 1000px;
+        }
+        100% {
+            margin-top: -100%;
+        }
+    }
+
+    @keyframes animateBubble {
+        0% {
+            margin-top: 1000px;
+        }
+        100% {
+            margin-top: -100%;
+        }
+    }
+
+    @-webkit-keyframes sideWays {
+        0% {
+            margin-left:0px;
+        }
+        100% {
+            margin-left:50px;
+        }
+    }
+
+    @-moz-keyframes sideWays {
+        0% {
+            margin-left:0px;
+        }
+        100% {
+            margin-left:50px;
+        }
+    }
+
+    @keyframes sideWays {
+        0% {
+            margin-left:0px;
+        }
+        100% {
+            margin-left:50px;
+        }
+    }
+
+    /* BUBBLES ANIMATIONS */
+    .x1 {
+        -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        -moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+        left: -5%;
+        top: 5%;
+
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        transform: scale(0.6);
+    }
+
+    .x2 {
+        -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+        -moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+        animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+        left: 5%;
+        top: 80%;
+
+        -webkit-transform: scale(0.4);
+        -moz-transform: scale(0.4);
+        transform: scale(0.4);
+    }
+
+    .x3 {
+        -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        -moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+        left: 10%;
+        top: 40%;
+
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+
+    .x4 {
+        -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+        -moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+        animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+        left: 20%;
+        top: 0;
+
+        -webkit-transform: scale(0.3);
+        -moz-transform: scale(0.3);
+        transform: scale(0.3);
+    }
+
+    .x5 {
+        -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+        -moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+        animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+        left: 30%;
+        top: 50%;
+
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    .x6 {
+        -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        -moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+        left: 50%;
+        top: 0;
+
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+
+    .x7 {
+        -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        -moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+        left: 65%;
+        top: 70%;
+
+        -webkit-transform: scale(0.4);
+        -moz-transform: scale(0.4);
+        transform: scale(0.4);
+    }
+
+    .x8 {
+        -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+        -moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+        animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+        left: 80%;
+        top: 10%;
+
+        -webkit-transform: scale(0.3);
+        -moz-transform: scale(0.3);
+        transform: scale(0.3);
+    }
+
+    .x9 {
+        -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+        -moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+        animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+        left: 90%;
+        top: 50%;
+
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        transform: scale(0.6);
+    }
+
+    .x10 {
+        -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        -moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+        left: 80%;
+        top: 80%;
+
+        -webkit-transform: scale(0.3);
+        -moz-transform: scale(0.3);
+        transform: scale(0.3);
+    }
+
+    /* BUBBLES OBJECTS */
+
+    .bubble {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+
+        height: 200px;
+        position: absolute;
+        width: 200px;
+    }
+
+    .bubble:after {
+        background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+        background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+        background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+        background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+        background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+        -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+        box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+
+        content: "";
+        height: 180px;
+        left: 10px;
+        position: absolute;
+        width: 180px;
+    }
+
+    #homepage-card {
+        .ant-steps-item-title {
+            font-family: Vernada;
+            font-weight: 700;
+            color: grey;
+        }
+
+
+
+
+
+    }
+}
+
 </style>
