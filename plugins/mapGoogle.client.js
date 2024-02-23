@@ -13,7 +13,7 @@ Vue.mixin({
     data() {
         return {
             GM_loaded: false, // Tracks whether already GM loaded
-            GM_instance: null // Holds the GM instance in the context of Vue; much more convenient to use *anywhere* (Vue templates or scripts) whereas directly accessing the window object within Vue can be problematic.
+            GM_instance: null, // Holds the GM instance in the context of Vue; much more convenient to use *anywhere* (Vue templates or scripts) whereas directly accessing the window object within Vue can be problematic.
             GM_placeService: null, // Optional - Holds the GM Places service
         }
     },
