@@ -68,9 +68,7 @@
 </template>
 
 <script setup>
-export default {
-    name: "TwoCandles"
-}
+
 </script>
 
 <style scoped lang="scss">
