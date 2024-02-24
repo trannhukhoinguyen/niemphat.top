@@ -1,16 +1,22 @@
 <template>
-  <div>
+  <a-card title="Nam mô A Di Đà Phật!">
       <iframe
         class="embed-responsive-item"
-        src="https://thuvienhoasen.org/images/file/zqfZjip_1ggQAIJ4/kinhtruongbo.pdf"
+        :src="src"
         type="application/pdf"
         allowfullscreen
       />
-  </div>
+  </a-card>
 </template>
 
 <script setup>
 
+const props = defineProps({
+    src: {
+        type: String,
+        required: true,
+    },
+});
 </script>
 
 <style lang="scss">

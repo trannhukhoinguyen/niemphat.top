@@ -1,8 +1,8 @@
 <template>
     <div class="default-layout-wrapper">
-        <a-card class="pdf-viewer-card">
+        <div class="pdf-viewer">
             <PdfViewer />
-        </a-card>
+        </div>
         <div class="top-parts">
             <TwelveCauses />
         </div>
