@@ -2,7 +2,7 @@
   <a-card title="Nam mô A Di Đà Phật!">
       <iframe
         class="embed-responsive-item"
-        :src="src"
+        :src="fileSrc"
         type="application/pdf"
         allowfullscreen
       />
@@ -12,10 +12,10 @@
 <script setup>
 
 const props = defineProps({
-    src: {
+  fileSrc: {
         type: String,
         required: true,
-    },
+  },
 });
 </script>
 
