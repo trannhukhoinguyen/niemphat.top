@@ -1,20 +1,16 @@
 <template>
     <a-space>
-      <template v-for="fileSrc in fileSrcSource">
+      <template v-for="file in fileSource">
           <PdfItem
-            :src="fileSrc.src"
+            :fileSrc="file.src"
           />
       </template>
     </a-space>
 </template>
 
 <script setup>
-const fileSrcSource = ref(sutraSource);
-const fileSrcSource = computed(() => {
-    return sutraSource
-        ? vinayaSource
-        : sastraSource
-});
+
+
 const sutraSource = [
     {
         type: 'sutra',
@@ -36,7 +32,7 @@ const sastraSource = [
         src: 'https://phatgiao.org.vn/tu-dien-phat-hoc-online/kinh-luat-luan-k54861.html',
     }
 ];
-
+const fileSource = ref(sutraSource);
 </script>
 
 <style lang="scss">
