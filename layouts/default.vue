@@ -1,12 +1,18 @@
 <template>
     <div class="default-layout-wrapper">
-        <div class="pdf-viewer">
+      <div>
+        <Menu />
+      </div>
+
+      <div class="pdf-viewer">
             <PdfViewer />
         </div>
-        <div class="top-parts">
+
+      <div class="top-parts">
             <TwelveCauses />
         </div>
-        <div class="bottom-parts">
+
+      <div class="bottom-parts">
             <!--                Bubbles-->
             <div class="bubble x1"></div>
             <div class="bubble x2"></div>
