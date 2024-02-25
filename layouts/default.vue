@@ -1,12 +1,12 @@
 <template>
     <div class="default-layout-wrapper">
       <div>
-        <Menu />
+        <AllMenu />
       </div>
 
       <div class="pdf-viewer">
             <PdfViewer />
-        </div>
+      </div>
 
       <div class="top-parts">
             <TwelveCauses />
