@@ -13,7 +13,6 @@
         </div>
 
       <div class="bottom-parts">
-            <!--                Bubbles-->
             <div class="bubble x1"></div>
             <div class="bubble x2"></div>
             <div class="bubble x3"></div>
@@ -25,7 +24,6 @@
             <div class="bubble x9"></div>
             <div class="bubble x10"></div>
 
-            <!--                Turtle-->
             <div class="turtle" title="Rùa Mù (Blind Turtle)">
                 <div class="turtle__head"></div>
                 <div class="turtle__legs -left"></div>
