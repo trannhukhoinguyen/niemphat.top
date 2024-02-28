@@ -5,6 +5,7 @@
 </template>
 
 <script setup>
+import Sidebar from '/components/AllMenu/Sidebar.vue';
 
 </script>
 

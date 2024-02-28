@@ -1,6 +1,6 @@
 <template>
   <div
-      class="sidebar"
+      class="sidebar-component"
       :class="isOpened ? 'open' : ''"
       :style="cssVars"
   >
@@ -151,7 +151,7 @@ export default {
     },
     menuTitle: {
       type: String,
-      default: 'Akahon',
+      default: 'A Di Đà Phật',
     },
     menuLogo: {
       type: String,
@@ -180,51 +180,51 @@ export default {
       default: () => [
         {
           link: '#',
-          name: 'Dashboard',
+          name: 'Đang xây dựng',
           tooltip: 'Dashboard',
-          icon: 'bx-grid-alt',
+          icon: 'bx-folder',
         },
         {
           link: '#',
-          name: 'User',
+          name: 'Đang xây dựng',
           tooltip: 'User',
-          icon: 'bx-user',
+          icon: 'bx-folder',
         },
         {
           link: '#',
-          name: 'Messages',
+          name: 'Đang xây dựng',
           tooltip: 'Messages',
-          icon: 'bx-chat',
+          icon: 'bx-folder',
         },
         {
           link: '#',
-          name: 'Analytics',
+          name: 'Đang xây dựng',
           tooltip: 'Analytics',
-          icon: 'bx-pie-chart-alt-2',
+          icon: 'bx-folder',
         },
         {
           link: '#',
-          name: 'File Manager',
+          name: 'Đang xây dựng',
           tooltip: 'Files',
           icon: 'bx-folder',
         },
         {
           link: '#',
-          name: 'Order',
+          name: 'Đang xây dựng',
           tooltip: 'Order',
-          icon: 'bx-cart-alt',
+          icon: 'bx-folder',
         },
         {
           link: '#',
-          name: 'Saved',
+          name: 'Đang xây dựng',
           tooltip: 'Saved',
-          icon: 'bx-heart',
+          icon: 'bx-folder',
         },
         {
           link: '#',
-          name: 'Setting',
+          name: 'Đang xây dựng',
           tooltip: 'Setting',
-          icon: 'bx-cog',
+          icon: 'bx-folder',
         },
       ],
     },
@@ -250,11 +250,11 @@ export default {
     },
     profileName: {
       type: String,
-      default: 'Fayzullo Saidakbarov',
+      default: '',
     },
     profileRole: {
       type: String,
-      default: 'Frontend vue developer',
+      default: '',
     },
     isExitButton: {
       type: Boolean,
@@ -389,7 +389,7 @@ body {
   width: 30px;
   margin: 0 10px 0 10px;
 }
-.sidebar {
+.sidebar-component {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -405,31 +405,31 @@ body {
   z-index: 99;
   transition: all 0.5s ease;
 }
-.sidebar.open {
+.sidebar-component.open {
   width: 250px;
 }
-.sidebar .logo-details {
+.sidebar-component .logo-details {
   height: 60px;
   display: flex;
   align-items: center;
   position: relative;
 }
-.sidebar .logo-details .icon {
+.sidebar-component .logo-details .icon {
   opacity: 0;
   transition: all 0.5s ease;
 }
-.sidebar .logo-details .logo_name {
+.sidebar-component .logo-details .logo_name {
   color: var(--logo-title-color);
   font-size: 20px;
   font-weight: 600;
   opacity: 0;
   transition: all 0.5s ease;
 }
-.sidebar.open .logo-details .icon,
-.sidebar.open .logo-details .logo_name {
+.sidebar-component.open .logo-details .icon,
+.sidebar-component.open .logo-details .logo_name {
   opacity: 1;
 }
-.sidebar .logo-details #btn {
+.sidebar-component .logo-details #btn {
   position: absolute;
   top: 50%;
   right: 0;
@@ -441,10 +441,10 @@ body {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.sidebar.open .logo-details #btn {
+.sidebar-component.open .logo-details #btn {
   text-align: right;
 }
-.sidebar i {
+.sidebar-component i {
   color: var(--icons-color);
   height: 60px;
   min-width: 50px;
@@ -452,13 +452,13 @@ body {
   text-align: center;
   line-height: 60px;
 }
-.sidebar .nav-list {
+.sidebar-component .nav-list {
   margin-top: 20px;
   /* margin-bottom: 60px; */
   /* height: 100%; */
   /* min-height: min-content; */
 }
-.sidebar li {
+.sidebar-component li {
   position: relative;
   margin: 8px 0;
   list-style: none;
@@ -486,10 +486,10 @@ body {
   /* top: 50%; */
   transform: translateY(25%);
 }
-.sidebar.open li .tooltip {
+.sidebar-component.open li .tooltip {
   display: none;
 }
-.sidebar input {
+.sidebar-component input {
   font-size: 15px;
   color: var(--serach-input-text-color);
   font-weight: 400;
@@ -502,11 +502,11 @@ body {
   transition: all 0.5s ease;
   background: var(--secondary-color);
 }
-.sidebar.open input {
+.sidebar-component.open input {
   padding: 0 20px 0 50px;
   width: 100%;
 }
-.sidebar .bx-search {
+.sidebar-component .bx-search {
   position: absolute;
   top: 50%;
   left: 0;
@@ -515,15 +515,15 @@ body {
   background: var(--secondary-color);
   color: var(--icons-color);
 }
-.sidebar.open .bx-search:hover {
+.sidebar-component.open .bx-search:hover {
   background: var(--secondary-color);
   color: var(--icons-color);
 }
-.sidebar .bx-search:hover {
+.sidebar-component .bx-search:hover {
   background: var(--menu-items-hover-color);
   color: var(--bg-color);
 }
-.sidebar li a {
+.sidebar-component li a {
   display: flex;
   height: 100%;
   width: 100%;
@@ -533,10 +533,10 @@ body {
   transition: all 0.4s ease;
   background: var(--bg-color);
 }
-.sidebar li a:hover {
+.sidebar-component li a:hover {
   background: var(--menu-items-hover-color);
 }
-.sidebar li a .links_name {
+.sidebar-component li a .links_name {
   color: var(--menu-items-text-color);
   font-size: 15px;
   font-weight: 400;
@@ -545,16 +545,16 @@ body {
   pointer-events: none;
   transition: 0.4s;
 }
-.sidebar.open li a .links_name {
+.sidebar-component.open li a .links_name {
   opacity: 1;
   pointer-events: auto;
 }
-.sidebar li a:hover .links_name,
-.sidebar li a:hover i {
+.sidebar-component li a:hover .links_name,
+.sidebar-component li a:hover i {
   transition: all 0.5s ease;
   color: var(--bg-color);
 }
-.sidebar li router-link {
+.sidebar-component li router-link {
   display: flex;
   height: 100%;
   width: 100%;
@@ -564,10 +564,10 @@ body {
   transition: all 0.4s ease;
   background: var(--bg-color);
 }
-.sidebar li router-link:hover {
+.sidebar-component li router-link:hover {
   background: var(--menu-items-hover-color);
 }
-.sidebar li router-link .links_name {
+.sidebar-component li router-link .links_name {
   color: var(--menu-items-text-color);
   font-size: 15px;
   font-weight: 400;
@@ -576,22 +576,22 @@ body {
   pointer-events: none;
   transition: 0.4s;
 }
-.sidebar.open li router-link .links_name {
+.sidebar-component.open li router-link .links_name {
   opacity: 1;
   pointer-events: auto;
 }
-.sidebar li router-link:hover .links_name,
-.sidebar li router-link:hover i {
+.sidebar-component li router-link:hover .links_name,
+.sidebar-component li router-link:hover i {
   transition: all 0.5s ease;
   color: var(--bg-color);
 }
-.sidebar li i {
+.sidebar-component li i {
   height: 50px;
   line-height: 50px;
   font-size: 18px;
   border-radius: 12px;
 }
-.sidebar div.profile {
+.sidebar-component div.profile {
   position: relative;
   height: 60px;
   width: 78px;
@@ -602,32 +602,32 @@ body {
   transition: all 0.5s ease;
   overflow: hidden;
 }
-.sidebar.open div.profile {
+.sidebar-component.open div.profile {
   width: 250px;
 }
-.sidebar div .profile-details {
+.sidebar-component div .profile-details {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
 }
-.sidebar div img {
+.sidebar-component div img {
   height: 45px;
   width: 45px;
   object-fit: cover;
   border-radius: 6px;
   margin-right: 10px;
 }
-.sidebar div.profile .name,
-.sidebar div.profile .job {
+.sidebar-component div.profile .name,
+.sidebar-component div.profile .job {
   font-size: 15px;
   font-weight: 400;
   color: var(--menu-footer-text-color);
   white-space: nowrap;
 }
-.sidebar div.profile .job {
+.sidebar-component div.profile .job {
   font-size: 12px;
 }
-.sidebar .profile #log_out {
+.sidebar-component .profile #log_out {
   position: absolute;
   top: 50%;
   right: 0;
@@ -639,19 +639,19 @@ body {
   border-radius: 0px;
   transition: all 0.5s ease;
 }
-.sidebar.open .profile #log_out {
+.sidebar-component.open .profile #log_out {
   width: 50px;
   background: var(--secondary-color);
   opacity: 0;
 }
-.sidebar.open .profile:hover #log_out {
+.sidebar-component.open .profile:hover #log_out {
   opacity: 1;
 }
-.sidebar.open .profile #log_out:hover {
+.sidebar-component.open .profile #log_out:hover {
   opacity: 1;
   color: red;
 }
-.sidebar .profile #log_out:hover {
+.sidebar-component .profile #log_out:hover {
   color: red;
 }
 .home-section {
@@ -664,7 +664,7 @@ body {
   transition: all 0.5s ease;
   z-index: 2;
 }
-.sidebar.open ~ .home-section {
+.sidebar-component.open ~ .home-section {
   left: 250px;
   width: calc(100% - 250px);
 }
@@ -699,7 +699,7 @@ body {
   display:none;
 } */
 @media (max-width: 420px) {
-  .sidebar li .tooltip {
+  .sidebar-component li .tooltip {
     display: none;
   }
 }
