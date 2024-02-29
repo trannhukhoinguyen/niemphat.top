@@ -1,5 +1,5 @@
 <template>
-  <a-card style="padding: 24px" id="twelve-cause-card">
+  <a-card style="padding: 24px" class="twelve-cause-card">
     <div style="top: 0" title="Thập Nhị Nhân Duyên (12-linked chain of causation)">
         <a-steps v-model:current="current">
             <a-step title="Vô Minh" description="(Ignorance)">
@@ -126,5 +126,11 @@ const current = ref(0);
 </script>
 
 <style scoped lang="scss">
-
+.twelve-cause-card {
+    .ant-steps-item-title {
+        font-family: Vernada;
+        font-weight: 700;
+        color: grey;
+    }
+}
 </style>

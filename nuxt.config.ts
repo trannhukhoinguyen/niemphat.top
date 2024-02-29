@@ -3,10 +3,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
 
-  // Defaults options
   css: [
       'ant-design-vue/dist/antd.min.css',
-      'primevue/resources/themes/aura-light-green/theme.css',
   ],
   vite: {
     css: {
@@ -26,26 +24,18 @@ export default defineNuxtConfig({
     injectPosition: 'first',
     viewer: true,
   },
-  // It's best to keep your GM key where all other keys are: your .env file; however this is inaccessible client-side.
-  // Here, we tell Nuxt the specific env's we want to make available client-side.
   env: {
 
   },
-
-  // Register your new plugin
   plugins: [
 
   ],
-
   modules: [
-    '@nuxt/content',
-    'nuxt-primevue'
+
   ],
-
   content: {
-    // ... options
-  },
 
+  },
   nitro: {
     preset: 'node-server'
   }

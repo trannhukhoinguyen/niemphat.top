@@ -1,5 +1,5 @@
 <template>
-    <a-space>
+    <a-space class="pdf-viewer">
       <template v-for="file in fileSource">
           <PdfItem
             :fileSrc="file.src"
@@ -35,6 +35,6 @@ const sastraSource = [
 const fileSource = ref(sutraSource);
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 
 </style>
