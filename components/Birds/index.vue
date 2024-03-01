@@ -1,5 +1,5 @@
 <template>
-    <div class="bird-wrapper" style="" title="Đàn chim">
+    <div class="bird-wrapper" style="">
         <div class="bird-container bird-container--one">
             <div class="bird bird--one"></div>
         </div>

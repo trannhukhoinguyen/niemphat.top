@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+
   ssr: false,
 
   css: [
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  tailwindcss: {
+/*  tailwindcss: {
     cssPath: '~/assets/scss/tailwind.scss',
     configPath: 'tailwind.config',
     exposeConfig: false,
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     config: {},
     injectPosition: 'first',
     viewer: true,
-  },
+  },*/
   env: {
 
   },

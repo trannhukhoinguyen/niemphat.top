@@ -23,7 +23,6 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.11.4",
     "eslint": "^8.56.0",
     "nuxt-primevue": "^0.3.0",
     "sass": "^1.71.0",

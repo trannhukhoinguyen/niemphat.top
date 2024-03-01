@@ -2,6 +2,8 @@
   <div>
       <TwoCandles />
   </div>
+
+  <BrokenImageEffect />
 </template>
 
 <script setup lang="ts">
@@ -12,6 +14,6 @@ useHead({
 });
 </script>
 
-<style setup="scss" scoped>
+<style scoped lang="scss">
 
 </style>
