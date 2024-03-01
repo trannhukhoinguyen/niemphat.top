@@ -1,11 +1,11 @@
 <template>
     <div class="default-layout-wrapper" style="display: none">
-<!--      <div class="top-parts">
+      <div class="top-parts">
           <div class="menu">
               <AllMenu />
           </div>
           <div class="twelve-causes">
-              <TwelveCauses />
+<!--              <TwelveCauses />-->
           </div>
       </div>
 
@@ -20,7 +20,7 @@
 
       <div class="bottom-parts">
            <Ocean />
-      </div>-->
+      </div>
 
     </div>
 </template>
