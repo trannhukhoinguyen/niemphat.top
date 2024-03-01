@@ -15,15 +15,6 @@ export default defineNuxtConfig({
       },
     },
   },
-/*  tailwindcss: {
-    cssPath: '~/assets/scss/tailwind.scss',
-    configPath: 'tailwind.config',
-    exposeConfig: false,
-    exposeLevel: 2,
-    config: {},
-    injectPosition: 'first',
-    viewer: true,
-  },*/
   env: {
 
   },
