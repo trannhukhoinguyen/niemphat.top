@@ -1,5 +1,5 @@
 <template>
-    <div class="default-layout-wrapper" style="display: none">
+    <div class="default-layout-wrapper">
       <div class="top-parts">
           <div class="menu">
               <AllMenu />
@@ -33,5 +33,4 @@
 .default-layout-wrapper {
 
 }
-
 </style>
