@@ -5,10 +5,10 @@
               <AllMenu />
           </div>
           <div class="twelve-causes">
-<!--              <TwelveCauses />-->
+              <TwelveCauses />
           </div>
       </div>
-
+        <a-button @click="warning">Warning</a-button>
       <div class="middle-parts">
           <div class="sky">
               <Sky />
@@ -26,7 +26,18 @@
 </template>
 
 <script setup>
+import { Modal } from "ant-design-vue";
 
+const modal = Modal;
+const warning = () => {
+    Modal.warning({
+        title: 'This is a warning message',
+        content: 'some messages...some messages...',
+        onCancel() {
+            modal.warning();
+        },
+    });
+};
 </script>
 
 <style scoped lang="scss">
