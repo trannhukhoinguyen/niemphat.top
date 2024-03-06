@@ -1,9 +1,12 @@
 <template>
   <div>
+      <FlashLight />
+  </div>
+  <div>
       <TwoCandles />
   </div>
 
-  <BrokenImageEffect />
+
 </template>
 
 <script setup lang="ts">
