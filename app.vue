@@ -11,7 +11,7 @@ nuxtApp.hook('page:finish', () => {
 });
 useHead({
     titleTemplate: (titleChunk) => {
-        return titleChunk ? `${titleChunk}` : 'Being developed!';
+        return titleChunk ? `${titleChunk}` : 'A Di Đà Phật';
     },
 });
 </script>
