@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   server: {
     port: 3010 // default: 3000
   },
-  ssr: true,
+  ssr: false,
 
   css: [
 
