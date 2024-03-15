@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   ssr: false,
 
   css: [
-      'ant-design-vue/dist/antd.min.css',
+
   ],
   vite: {
     css: {
