@@ -1,7 +1,7 @@
 <template>
-  <a-card style="padding: 24px" class="twelve-cause-card">
+  <UCard style="padding: 24px" class="twelve-cause-card">
     <div style="top: 0" title="Thập Nhị Nhân Duyên (12-linked chain of causation)">
-        <a-steps v-model:current="current">
+<!--        <a-steps v-model:current="current">
             <a-step title="Vô Minh" description="(Ignorance)">
                 <template #icon>
                     <a-avatar size="12" style="background-color: white; display: flex; align-items: center; justify-content: center">
@@ -115,9 +115,9 @@
                     </a-avatar>
                 </template>
             </a-step>
-        </a-steps>
+        </a-steps>-->
     </div>
-  </a-card>
+  </UCard>
 </template>
 
 <script setup>

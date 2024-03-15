@@ -22,12 +22,15 @@ export default defineNuxtConfig({
 
   ],
   modules: [
-
+    '@nuxt/ui',
   ],
   content: {
 
   },
   nitro: {
     preset: 'node-server'
+  },
+  colorMode: {
+    preference: 'light'
   }
 });
