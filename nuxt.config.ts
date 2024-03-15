@@ -1,7 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-
-  ssr: false,
+  server: {
+    port: 8000 // default: 3000
+  },
+  ssr: true,
 
   css: [
 
@@ -28,9 +30,10 @@ export default defineNuxtConfig({
 
   },
   nitro: {
-    preset: 'node-server'
+    // preset: 'node-server'
   },
   colorMode: {
     preference: 'light'
-  }
+  },
+
 });
