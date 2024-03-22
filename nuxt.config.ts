@@ -1,8 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  server: {
-    port: 3010 // default: 3000
-  },
+/*  devServer: {
+    port: 3010
+  },*/
   ssr: false,
 
   css: [
