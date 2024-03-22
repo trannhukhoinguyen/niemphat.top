@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "formatcode": "npx prettier --write ."
+    "formatcode": "npx prettier --write .",
+    "deploy": "pm2 start npm --name niemphat.top -- run start"
   },
   "dependencies": {
     "@nuxt/content": "^2.12.0",
