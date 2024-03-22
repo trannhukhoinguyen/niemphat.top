@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
         {
-            name: 'NuxtAppName',
+            name: 'niemphat.top',
             port: '3010',
             exec_mode: 'cluster',
             instances: 'max',
