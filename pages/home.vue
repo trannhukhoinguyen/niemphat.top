@@ -1,22 +1,29 @@
 <template>
-    <UCard>
-        <template #header>
-            <div>NAM MÔ A DI ĐÀ PHẬT</div>
-            <Placeholder class="h-8" />
-        </template>
+  <div class="default-layout-wrapper">
+    <div class="top-parts">
+      <div class="menu">
+        <AllMenu />
+      </div>
+      <div class="twelve-causes">
+        <TwelveCauses />
+      </div>
+    </div>
+    <div class="middle-parts">
+      <div class="sky">
+        <Sky />
+      </div>
+      <div class="">
 
-        <div>NAM MÔ A DI ĐÀ PHẬT</div>
-        <Placeholder class="h-32" />
+      </div>
+    </div>
 
-        <template #footer>
-            <div>NAM MÔ A DI ĐÀ PHẬT</div>
-            <Placeholder class="h-8" />
-        </template>
-    </UCard>
+    <div class="bottom-parts">
+      <Ocean />
+    </div>
+
+  </div>
 </template>
-
 <script setup lang="ts">
-definePageMeta({
-    layout: 'guest',
-});
+
+
 </script>

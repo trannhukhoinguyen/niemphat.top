@@ -81,9 +81,6 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: 'guest',
-});
 const value = ref('')
 const q = ref('')
 const formRef = ref();

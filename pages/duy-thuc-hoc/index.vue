@@ -1,8 +1,9 @@
 <template>
-<TwelveCauses />
+DUY THỨC HỌC
 </template>
 
 <script setup lang="ts">
+
 
 
 </script>

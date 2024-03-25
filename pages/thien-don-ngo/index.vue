@@ -1,5 +1,5 @@
 <template>
-<TwelveCauses />
+
 </template>
 
 <script setup lang="ts">
