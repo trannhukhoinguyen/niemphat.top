@@ -25,7 +25,6 @@ export default defineNuxtConfig({
   ],
   modules: [
     '@nuxt/ui',
-    '@nuxtjs/sitemap',
   ],
   site: {
     url: 'https://niemphat.top',
