@@ -2,14 +2,12 @@
 
 </template>
 
-<script setup lang="ts">
-definePageMeta({
-  layout: 'guest',
-});
+<script lang="ts" setup>
+
 
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

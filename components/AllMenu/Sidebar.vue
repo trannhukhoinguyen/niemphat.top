@@ -14,13 +14,9 @@
           alt="menu-logo"
           class="menu-logo icon"
       >
-      <i
-          v-else
-          class="bx icon"
-          :class="menuIcon"
-      />
+      <i class='bx bx-home-heart' @click="() => router.push('/home')" />
       <div class="logo_name">
-        {{ menuTitle }}
+          {{ menuTitle }}
       </div>
       <i
           class="bx"
@@ -61,9 +57,7 @@
             <span
                 data-target="links_search"
                 class="tooltip"
-            >{{
-                searchTooltip
-              }}</span>
+            >{{ searchTooltip }}</span>
           </li>
 
           <li
@@ -136,237 +130,209 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'SidebarMenuAkahon',
-  props: {
-    //! Menu settings
+<script lang="ts" setup>
+
+const props = defineProps({
+    // Menu settings
     isMenuOpen: {
-      type: Boolean,
-      default: true,
+        type: Boolean,
+        default: true,
     },
     isUsedVueRouter: {
-      type: Boolean,
-      default: false,
+        type: Boolean,
+        default: false,
     },
     menuTitle: {
-      type: String,
-      default: 'A Di Đà Phật',
+        type: String,
+        default: 'A Di Đà Phật',
     },
     menuLogo: {
-      type: String,
-      default: '',
+        type: String,
+        default: '',
     },
     menuIcon: {
-      type: String,
-      default: 'bxl-c-plus-plus',
+        type: String,
+        default: 'bx bx-home-heart',
     },
     isPaddingLeft: {
-      type: Boolean,
-      default: true,
+        type: Boolean,
+        default: true,
     },
     menuOpenedPaddingLeftBody: {
-      type: String,
-      default: '250px',
+        type: String,
+        default: '250px',
     },
     menuClosedPaddingLeftBody: {
-      type: String,
-      default: '78px',
+        type: String,
+        default: '78px',
     },
 
-    //! Menu items
+    // Menu items
     menuItems: {
-      type: Array,
-      default: () => [
-        {
-          link: '#',
-          name: 'Đang xây dựng',
-          tooltip: 'Dashboard',
-          icon: 'bx-folder',
-        },
-        {
-          link: '#',
-          name: 'Đang xây dựng',
-          tooltip: 'User',
-          icon: 'bx-folder',
-        },
-        {
-          link: '#',
-          name: 'Đang xây dựng',
-          tooltip: 'Messages',
-          icon: 'bx-folder',
-        },
-        {
-          link: '#',
-          name: 'Đang xây dựng',
-          tooltip: 'Analytics',
-          icon: 'bx-folder',
-        },
-        {
-          link: '#',
-          name: 'Đang xây dựng',
-          tooltip: 'Files',
-          icon: 'bx-folder',
-        },
-        {
-          link: '#',
-          name: 'Đang xây dựng',
-          tooltip: 'Order',
-          icon: 'bx-folder',
-        },
-        {
-          link: '#',
-          name: 'Đang xây dựng',
-          tooltip: 'Saved',
-          icon: 'bx-folder',
-        },
-        {
-          link: '#',
-          name: 'Đang xây dựng',
-          tooltip: 'Setting',
-          icon: 'bx-folder',
-        },
-      ],
+        type: Array,
+        default: () => [
+            {
+                link: '#',
+                name: 'Đang xây dựng',
+                tooltip: 'Dashboard',
+                icon: 'bx-folder',
+            },
+            {
+                link: '#',
+                name: 'Đang xây dựng',
+                tooltip: 'User',
+                icon: 'bx-folder',
+            },
+            {
+                link: '#',
+                name: 'Đang xây dựng',
+                tooltip: 'Messages',
+                icon: 'bx-folder',
+            },
+            {
+                link: '#',
+                name: 'Đang xây dựng',
+                tooltip: 'Analytics',
+                icon: 'bx-folder',
+            },
+            {
+                link: '#',
+                name: 'Đang xây dựng',
+                tooltip: 'Files',
+                icon: 'bx-folder',
+            },
+            {
+                link: '#',
+                name: 'Đang xây dựng',
+                tooltip: 'Order',
+                icon: 'bx-folder',
+            },
+            {
+                link: '#',
+                name: 'Đang xây dựng',
+                tooltip: 'Saved',
+                icon: 'bx-folder',
+            },
+            {
+                link: '#',
+                name: 'Đang xây dựng',
+                tooltip: 'Setting',
+                icon: 'bx-folder',
+            },
+        ],
     },
 
-    //! Search
+    // Search
     isSearch: {
-      type: Boolean,
-      default: true,
+        type: Boolean,
+        default: true,
     },
     searchPlaceholder: {
-      type: String,
-      default: 'Search...',
+        type: String,
+        default: 'Search...',
     },
     searchTooltip: {
-      type: String,
-      default: 'Search',
+        type: String,
+        default: 'Search',
     },
 
-    //! Profile detailes
+    // Profile details
     profileImg: {
-      type: String,
-      default: '',
+        type: String,
+        default: '',
     },
     profileName: {
-      type: String,
-      default: '',
+        type: String,
+        default: '',
     },
     profileRole: {
-      type: String,
-      default: '',
+        type: String,
+        default: '',
     },
     isExitButton: {
-      type: Boolean,
-      default: true,
+        type: Boolean,
+        default: true,
     },
     isLoggedIn: {
-      type: Boolean,
-      default: true,
+        type: Boolean,
+        default: true,
     },
 
-    //! Styles
+    // Styles
     bgColor: {
-      type: String,
-      default: '#11101d',
+        type: String,
+        default: '#11101d',
     },
     secondaryColor: {
-      type: String,
-      default: '#1d1b31',
+        type: String,
+        default: '#1d1b31',
     },
     homeSectionColor: {
-      type: String,
-      default: '#e4e9f7',
+        type: String,
+        default: '#e4e9f7',
     },
     logoTitleColor: {
-      type: String,
-      default: '#fff',
+        type: String,
+        default: '#fff',
     },
     iconsColor: {
-      type: String,
-      default: '#fff',
+        type: String,
+        default: '#fff',
     },
     itemsTooltipColor: {
-      type: String,
-      default: '#e4e9f7',
+        type: String,
+        default: '#e4e9f7',
     },
     searchInputTextColor: {
-      type: String,
-      default: '#fff',
+        type: String,
+        default: '#fff',
     },
     menuItemsHoverColor: {
-      type: String,
-      default: '#fff',
+        type: String,
+        default: '#fff',
     },
     menuItemsTextColor: {
-      type: String,
-      default: '#fff',
+        type: String,
+        default: '#fff',
     },
     menuFooterTextColor: {
-      type: String,
-      default: '#fff',
+        type: String,
+        default: '#fff',
     },
-  },
-  data() {
-    return {
-      isOpened: false,
-    }
-  },
-  mounted() {
-    this.isOpened = this.isMenuOpen
-    this.tooltipAttached()
-  },
-  computed: {
-    cssVars() {
-      return {
-        // '--padding-left-body': this.isOpened ? this.menuOpenedPaddingLeftBody : this.menuClosedPaddingLeftBody,
-        '--bg-color': this.bgColor,
-        '--secondary-color': this.secondaryColor,
-        '--home-section-color': this.homeSectionColor,
-        '--logo-title-color': this.logoTitleColor,
-        '--icons-color': this.iconsColor,
-        '--items-tooltip-color': this.itemsTooltipColor,
-        '--serach-input-text-color': this.searchInputTextColor,
-        '--menu-items-hover-color': this.menuItemsHoverColor,
-        '--menu-items-text-color': this.menuItemsTextColor,
-        '--menu-footer-text-color': this.menuFooterTextColor,
-      }
-    },
-  },
-  watch: {
-    isOpened(val) {
-      window.document.body.style.paddingLeft =
-          this.isOpened && this.isPaddingLeft
-              ? this.menuOpenedPaddingLeftBody
-              : this.menuClosedPaddingLeftBody
-    },
-  },
-  methods: {
-    tooltipAttached() {
-      const tooltips = document.querySelectorAll('.tooltip')
-      tooltips.forEach(tooltip => {
-        document.body.appendChild(tooltip)
-      })
-      document.querySelectorAll('.tooltip').forEach(tooltip => {
-        const targetID = tooltip.dataset.target
-        const target = document.querySelector(`#${targetID}`)
-        if (!target) return
+});
+const router = useRouter();
+const isOpened = ref(props.isMenuOpen);
+const tooltipAttached = () => {
+    const tooltips = document.querySelectorAll('.tooltip');
+    tooltips.forEach(tooltip => {
+        document.body.appendChild(tooltip);
+    });
+    document.querySelectorAll('.tooltip').forEach(tooltip => {
+        const targetID = tooltip.dataset.target;
+        const target = document.querySelector(`#${targetID}`);
+        if (!target) return;
         target.addEventListener('mouseenter', () => {
-          const targetPosition = target.getBoundingClientRect()
-          if (this.isOpened) return
-          tooltip.style.top = `${targetPosition.top + window.scrollY}px`
-          tooltip.style.left = `${
-              targetPosition.left + targetPosition.width + 20
-          }px`
-          tooltip.classList.add('active')
-        })
+            const targetPosition = target.getBoundingClientRect();
+            if (isOpened.value) return;
+            tooltip.style.top = `${targetPosition.top + window.scrollY}px`;
+            tooltip.style.left = `${targetPosition.left + targetPosition.width + 20}px`;
+            tooltip.classList.add('active');
+        });
         target.addEventListener('mouseleave', () => {
-          tooltip.classList.remove('active')
-        })
-      })
-    },
-  },
-}
+            tooltip.classList.remove('active');
+        });
+    });
+};
+
+onMounted(() => {
+    isOpened.value = props.isMenuOpen;
+    tooltipAttached();
+});
+
+watchEffect(() => {
+    window.document.body.style.paddingLeft =
+        isOpened.value && props.isPaddingLeft ? props.menuOpenedPaddingLeftBody : props.menuClosedPaddingLeftBody;
+});
 </script>
 
 <style>

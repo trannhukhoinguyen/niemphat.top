@@ -1,13 +1,13 @@
 <template>
-DUY THỨC HỌC
+
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 
 
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

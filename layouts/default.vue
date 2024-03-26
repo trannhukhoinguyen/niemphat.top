@@ -4,6 +4,10 @@
       <div class="ant-pro-form-login-container">
         <div class="ant-pro-form-login-top">
           <div class="ant-pro-form-login-header">
+              <AllMenu />
+          </div>
+          <div class="float-right clock" style="float: right">
+
           </div>
         </div>
         <div class="ant-pro-form-login-main">
@@ -30,6 +34,8 @@ useHead({
     return titleChunk ? `${titleChunk} - A Di Đà Phật` : 'A Di Đà Phật';
   },
 });
+
+
 </script>
 
 <style lang="scss">
