@@ -25,6 +25,7 @@ export default defineNuxtConfig({
   ],
   modules: [
     '@nuxt/ui',
+    '@nuxt/image',
   ],
   site: {
     url: 'https://niemphat.top',
@@ -37,5 +38,36 @@ export default defineNuxtConfig({
   },
   colorMode: {
     preference: 'light'
+  },
+
+  runtimeConfig: {
+    spoonacular: {
+      apiKey: ''
+    }
+  },
+
+  routeRules: {
+    '/**': {
+      isr: 60 * 60 * 24
+    }
+  },
+
+  $development: {
+    nitro: {
+      storage: {
+        recipes: {
+          driver: 'fs',
+          base: 'recipes'
+        }
+      }
+    }
+  },
+
+  image: {
+    providers: {
+      spoonacular: {
+        provider: '~/providers/spoonacular.ts',
+      }
+    }
   },
 });
