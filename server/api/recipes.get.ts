@@ -1,66 +1,98 @@
-import * as z from 'valibot';
+/*const z = {
+    object: {
+        id: Number,
+        title: String,
+        image: new Option(),
+        imageType: new Option(),
+        servings: Number,
+        readyInMinutes: Number,
+        sourceUrl: String,
+        sourceName: String,
+        summary: String,
+        analyzedInstructions: [{
+            name: String,
+            steps: [{
+                number: Number,
+                step: String,
+                ingredients: [{
+                    id: Number,
+                    name: String,
+                    localizedName: String,
+                    image: String
+                }],
+                equipment: [{
+                    id: Number,
+                    name: String,
+                    localizedName: String,
+                    image: String
+                }],
+            }]
+        }],
+    },
+
+};
 
 const recipeSchema = z.object({
-    id: z.number(),
-    title: z.string(),
-    image: z.optional(z.string()),
-    imageType: z.optional(z.string()),
-    servings: z.number(),
-    readyInMinutes: z.number(),
-    sourceUrl: z.string(),
-    sourceName: z.string(),
-    summary: z.string(),
+    id: Number,
+    title: String,
+    image: new Option(),
+    imageType: new Option(),
+    servings: Number,
+    readyInMinutes: Number,
+    sourceUrl: String,
+    sourceName: String,
+    summary: String,
     analyzedInstructions: z.array(z.object({
-        name: z.string(),
+        name: String,
         steps: z.array(z.object({
-            number: z.number(),
-            step: z.string(),
+            number: Number,
+            step: String,
             ingredients: z.array(z.object({
-                id: z.number(),
-                name: z.string(),
-                localizedName: z.string(),
-                image: z.string()
+                id: Number,
+                name: String,
+                localizedName: String,
+                image: String
             })),
             equipment: z.array(z.object({
-                id: z.number(),
-                name: z.string(),
-                localizedName: z.string(),
-                image: z.string()
+                id: Number,
+                name: String,
+                localizedName: String,
+                image: String
             }))
         }))
     })),
     extendedIngredients: z.array(z.object({
-        id: z.number(),
-        name: z.string(),
-        nameClean: z.nullable(z.string()),
-        original: z.string(),
-        originalName: z.string(),
-        amount: z.number(),
-        unit: z.string(),
-        image: z.nullable(z.string()),
-        meta: z.array(z.string()),
+        id: Number,
+        name: String,
+        nameClean: z.nullable(String),
+        original: String,
+        originalName: String,
+        amount: Number,
+        unit: String,
+        image: z.nullable(String),
+        meta: z.array(String),
         measures: z.object({
             us: z.object({
-                amount: z.number(),
-                unitShort: z.string(),
-                unitLong: z.string()
+                amount: Number,
+                unitShort: String,
+                unitLong: String
             }),
             metric: z.object({
-                amount: z.number(),
-                unitShort: z.string(),
-                unitLong: z.string()
+                amount: Number,
+                unitShort: String,
+                unitLong: String
             })
         })
     })),
-    diets: z.array(z.string()),
-    dishTypes: z.array(z.string()),
-    cuisines: z.array(z.string()),
-    instructions: z.string()
+    diets: z.array(String),
+    dishTypes: z.array(String),
+    cuisines: z.array(String),
+    instructions: String
 })
 
 export default defineCachedEventHandler(async event => {
     console.log('making fresh recipes request')
-    const { recipes } = await $fetch<{ recipes: unknown }>('https://api.spoonacular.com/recipes/random', {
+    const { recipes } = await fetch<{ recipes: unknown }>('https://api.spoonacular.com/recipes/random', {
         query: {
             limitLicense: true,
             number: 100,
@@ -81,4 +113,4 @@ export default defineCachedEventHandler(async event => {
     shouldBypassCache: () => false,
     maxAge: 1000 * 60 * 60 * 24,
     staleMaxAge: 1000 * 60 * 60 * 24 * 7
-})
+})*/

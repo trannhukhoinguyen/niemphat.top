@@ -80,7 +80,7 @@
   </form>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const value = ref('')
 const q = ref('')
 const formRef = ref();
