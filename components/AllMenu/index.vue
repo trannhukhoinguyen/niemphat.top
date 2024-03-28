@@ -1,11 +1,15 @@
 <template>
   <div>
-    <Sidebar />
+      <TopBar />
+      <SideBar />
+      <BottomBar />
   </div>
 </template>
 
 <script setup>
-import Sidebar from '/components/AllMenu/Sidebar.vue';
+import SideBar from '/components/AllMenu/SideBar.vue';
+import TopBar from '/components/AllMenu/TopBar.vue';
+import BottomBar from '/components/AllMenu/BottomBar.vue';
 
 </script>
 

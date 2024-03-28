@@ -1,5 +1,5 @@
 <template>
-  <div class="topbar-component">
+  <div class="top-bar-component">
 
   </div>
 </template>
@@ -9,7 +9,7 @@
 </script>
 
 <style scoped lang="scss">
-.topbar-component {
+.top-bar-component {
 
 }
 </style>
