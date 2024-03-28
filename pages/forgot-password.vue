@@ -54,7 +54,7 @@
   </form>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const value = ref('')
 const q = ref('')
 const formRef = ref();
@@ -96,3 +96,7 @@ const onFinishFailed = (errorInfo) => {
   console.log('Failed:', errorInfo);
 };
 </script>
+
+<style scope lang="scss">
+
+</style>

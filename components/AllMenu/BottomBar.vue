@@ -1,41 +1,39 @@
 <template>
-  <div class="bottom-bar-component">
-      <CurvedBottomNavigation
-              foreground-color='#42A5F5'
-              badge-color='#FBC02D'
-              background-color='#FFFFFF'
-              icon-color='#0000008A'
-              :options="options"
-              v-model="selected"
-      />
+  <div class="top-bar-component">
+    <UHorizontalNavigation :links="links" class="border-b border-gray-200 dark:border-gray-800" />
   </div>
 </template>
 
-<script setup>
-import { CurvedBottomNavigation } from "bottom-navigation-vue";
-import "bottom-navigation-vue/dist/style.css";
+<script setup lang="ts">
+const route = useRoute()
 
-const selected = 1;
-const options = [
-    {
-        id: 1,
-        icon: "i-heroicons-light-bulb",
-        title: "Home",
-        childs: [{ id: 101, icon: "fas fa-gifts", title: "Gifts", badge: 7 }],
-    },
-    { id: 2, icon: "fas fa-wallet", title: "Wallet" },
-    {
-        id: 3,
-        icon: "i-ph-rocket-launch",
-        title: "Setting",
-        childs: [{ id: 301, icon: "fas fa-ticket-alt", title: "Tickets" }],
-    },
-    { id: 4, icon: "fas fa-bell", title: "Notification", badge: 15 },
-];
+const links = [{
+  label: 'Profile',
+  avatar: {
+    src: 'https://avatars.githubusercontent.com/u/739984?v=4'
+  },
+  badge: 100
+}, {
+  label: 'Installation',
+  icon: 'i-heroicons-home',
+  to: '/getting-started/installation'
+}, {
+  label: 'Horizontal Navigation',
+  icon: 'i-heroicons-chart-bar',
+  to: `${route.path.startsWith('/dev') ? '/dev' : ''}/components/horizontal-navigation`
+}, {
+  label: 'Command Palette',
+  icon: 'i-heroicons-command-line',
+  to: '/components/command-palette'
+}]
 </script>
 
 <style scoped lang="scss">
-.bottom-bar-component {
-
+.top-bar-component {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
 }
 </style>
+
+
