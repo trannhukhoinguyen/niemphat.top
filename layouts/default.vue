@@ -71,14 +71,13 @@
 </template>
 
 <script setup lang="ts">
-useHead({
-  titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} - A Di Đà Phật` : 'A Di Đà Phật';
-  },
-});
 import "@lbgm/pro-calendar-vue/style";
 
-import { ref, onMounted } from "vue";
+useHead({
+  titleTemplate: (titleChunk: String) => {
+    return titleChunk ? titleChunk : 'Nam mô A Di Đà Phật';
+  },
+});
 
 onMounted(() => {
   ["calendar.request.view", "calendar.request.report"].forEach((e: string) => {

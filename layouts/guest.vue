@@ -27,7 +27,7 @@
 <script setup>
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} - A Di Đà Phật` : 'A Di Đà Phật';
+    return titleChunk ? titleChunk : 'Nam mô A Di Đà Phật';
   },
 });
 </script>
