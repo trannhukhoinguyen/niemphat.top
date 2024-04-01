@@ -64,12 +64,4 @@ export default defineNuxtConfig({
       }
     }
   },
-
-  image: {
-    providers: {
-      spoonacular: {
-        provider: '~/providers/spoonacular.ts',
-      }
-    }
-  },
 });
