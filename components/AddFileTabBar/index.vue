@@ -96,7 +96,7 @@
        </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const fileAdd = document.querySelector('.fileAdd');
 fileAdd.on('click touch', function(e) {
     const thisFileAdd = document.querySelector(this);

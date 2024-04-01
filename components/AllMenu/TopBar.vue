@@ -56,6 +56,11 @@ const topBarLinks = [
       icon: 'i-heroicons-light-bulb',
       to: '/components/command-palette',
     },
+    {
+      label: 'Download / Tải xuống',
+      icon: 'i-heroicons-light-bulb',
+      to: '/download-buddhism-documents',
+    },
   ]
 ];
 
