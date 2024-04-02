@@ -5,7 +5,7 @@
     </header>
 
     <main>
-      <Calendar />
+
     </main>
 
     <footer class="footer-section">

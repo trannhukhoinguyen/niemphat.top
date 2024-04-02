@@ -10,31 +10,31 @@ const leftBarlinks = [
     {
       label: 'Niệm Phật',
       icon: 'i-heroicons-chart-bar',
-      to: '/kinh-lang-nghiem',
+      to: '/niem-phat',
     },
     {
       label: 'Thiền',
       icon: 'i-heroicons-chart-bar',
-      to: '/kinh-phap-hoa',
+      to: '/zen',
     },
     {
       label: 'Thiền Đốn Ngộ',
       icon: 'i-heroicons-bolt',
-      to: '/kinh-phap-hoa',
+      to: '/zen/sudden-enlightenment-zen',
     },    {
       label: 'Khán Thoại Đầu',
       icon: 'i-heroicons-chart-bar',
-      to: '/kinh-phap-hoa',
+      to: '/zen/sudden-enlightenment/',
     },
     {
       label: 'Sám Hối',
       icon: 'i-heroicons-chart-bar',
-      to: '/kinh-phap-hoa',
+      to: '/sam-hoi',
     },
     {
       label: 'Công Án',
       icon: 'i-heroicons-chart-bar',
-      to: '/kinh-hoa-nghiem',
+      to: '/zen/sudden-enlightenment/koans',
     },
   ],
   [

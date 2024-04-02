@@ -4,14 +4,26 @@
       <UHorizontalNavigation :links="topBarLinks" class="border-b border-gray-200 dark:border-gray-800" />
     </UContainer>
 
-    <UContainer style="float: right">
-      <UDropdown :items="profileDropdown" :popper="{ placement: 'bottom-start' }">
+    <UContainer>
+<!--      <UDropdown :items="profileDropdown" :popper="{ placement: 'bottom-start' }">
         <UAvatar
             src="https://avatars.githubusercontent.com/u/739984?v=4"
             size="2xs"
         />
         <UButton color="white" label="Profile" trailing-icon="i-heroicons-chevron-down-20-solid" />
-      </UDropdown>
+      </UDropdown>-->
+      <ClientOnly>
+          <UButton
+                  :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
+                  color="gray"
+                  variant="ghost"
+                  aria-label="Theme"
+                  @click="isDark = !isDark"
+          />
+          <template #fallback>
+              <div class="w-8 h-8" />
+          </template>
+      </ClientOnly>
     </UContainer>
 
 
@@ -64,13 +76,14 @@ const topBarLinks = [
   ]
 ];
 
-const profileDropdown = [
+/*const profileDropdown = [
   [{
     label: 'Profile',
     avatar: {
       src: 'https://avatars.githubusercontent.com/u/739984?v=4'
     }
-  }], [{
+  }],
+  [{
     label: 'Edit',
     icon: 'i-heroicons-pencil-square-20-solid',
     shortcuts: ['E'],
@@ -93,12 +106,23 @@ const profileDropdown = [
     icon: 'i-heroicons-trash-20-solid',
     shortcuts: ['⌘', 'D']
   }]
-];
+];*/
+
+// COLOR-MODE
+const colorMode = useColorMode()
+const isDark = computed({
+    get () {
+        return colorMode.value === 'dark'
+    },
+    set () {
+        colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+    }
+})
 </script>
 
 <style scoped lang="scss">
 .top-bar-component {
-  //width: 100vw;
+  width: 100vw;
 }
 </style>
 

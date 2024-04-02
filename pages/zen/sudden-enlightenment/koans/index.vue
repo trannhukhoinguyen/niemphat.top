@@ -1,5 +1,5 @@
 <template>
-<Post />
+
 </template>
 
 <script lang="ts" setup>

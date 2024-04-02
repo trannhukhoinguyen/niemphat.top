@@ -1,5 +1,5 @@
 export default defineNuxtRouteMiddleware((to, from) => {
-  let path = '/kinh-thu-lang-nghiem/chu-lang-nghiem';
+  let path = '/home';
 
   // TODO: check access_token from local storage
   if (localStorage.getItem('apollo:crm.token') !== null) {

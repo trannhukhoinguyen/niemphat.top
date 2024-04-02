@@ -3,5 +3,11 @@
   "extends": "./.nuxt/tsconfig.json",
   "includes": [
     "types/*.d.ts"
+  ],
+  "compilerOptions": {
+    "strict": true
+  },
+  "exclude": [
+    "proxy/**"
   ]
 }
