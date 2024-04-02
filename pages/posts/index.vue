@@ -1,7 +1,27 @@
+<template>
+    <div>
+        <AsyncWrapper v-slot="{ item }">
+            <NuxtLink :to="`/${type}/${item.id}`">
+                <MediaHero :item="item" />
+            </NuxtLink>
+        </AsyncWrapper>
+        <CarouselAutoQuery
+            v-for="query of queries"
+            :key="query.type + query.query"
+            :query="query"
+        />
+        <TheFooter />
+    </div>
+</template>
+
 <script setup lang="ts">
 definePageMeta({
     layout: 'guest',
 });
+import TheFooter from "/components/Posts/TheFooter.vue";
+import CarouselAutoQuery from "/components/Posts/carousel/AutoQuery.vue";
+import MediaHero from "/components/Posts/media/Hero.vue";
+
 import type { MediaType } from '~/types'
 import { QUERY_LIST } from '~/constants/lists'
 
@@ -23,18 +43,3 @@ const AsyncWrapper = defineComponent({
 })
 </script>
 
-<template>
-    <div>
-        <AsyncWrapper v-slot="{ item }">
-            <NuxtLink :to="`/${type}/${item.id}`">
-                <MediaHero :item="item" />
-            </NuxtLink>
-        </AsyncWrapper>
-        <CarouselAutoQuery
-                v-for="query of queries"
-                :key="query.type + query.query"
-                :query="query"
-        />
-        <TheFooter />
-    </div>
-</template>
