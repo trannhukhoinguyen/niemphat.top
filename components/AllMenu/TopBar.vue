@@ -1,17 +1,15 @@
 <template>
   <div class="top-bar-component" style="left: 0; margin-right: 200px">
     <UContainer>
-      <UHorizontalNavigation :links="topBarLinks" class="border-b border-gray-200 dark:border-gray-800" />
-    </UContainer>
-
-    <UContainer>
-<!--      <UDropdown :items="profileDropdown" :popper="{ placement: 'bottom-start' }">
-        <UAvatar
-            src="https://avatars.githubusercontent.com/u/739984?v=4"
-            size="2xs"
-        />
-        <UButton color="white" label="Profile" trailing-icon="i-heroicons-chevron-down-20-solid" />
-      </UDropdown>-->
+      <UHorizontalNavigation :links="topBarLinks" class="border-b border-gray-200 dark:border-gray-800">
+          <template #icon>
+              <template v-if="true">&#68181;</template>
+              <template v-if="topBarLinks.length">&#129367;</template>
+          </template>
+          <template #default="{ link }">
+              <span class="group-hover:text-primary relative">{{ link.label }}</span>
+          </template>
+      </UHorizontalNavigation>
       <ClientOnly>
           <UButton
                   :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
@@ -26,51 +24,54 @@
       </ClientOnly>
     </UContainer>
 
+    <UContainer>
+<!--      <UDropdown :items="profileDropdown" :popper="{ placement: 'bottom-start' }">
+        <UAvatar
+            src="https://avatars.githubusercontent.com/u/739984?v=4"
+            size="2xs"
+        />
+        <UButton color="white" label="Profile" trailing-icon="i-heroicons-chevron-down-20-solid" />
+      </UDropdown>-->
+
+    </UContainer>
+
 
   </div>
 </template>
 
 <script setup lang="ts">
-
 const topBarLinks = [
   [
     {
       label: 'Home',
-      icon: 'i-heroicons-home',
       to: '/home',
     }
   ],
   [
     {
       label: 'Kinh Lăng Nghiêm',
-      icon: 'i-heroicons-chart-bar',
-      to: '/kinh-lang-nghiem',
+      to: '/sutras/kinh-lang-nghiem',
     },
     {
-      label: 'Kinh Pháp Hoa',
-      icon: 'i-heroicons-chart-bar',
-      to: '/kinh-phap-hoa',
+      label: 'Kinh Diệu Pháp Liên Hoa',
+      to: '/sutras/the-wonderful-dharma-of-lotus-sutra',
     },
     {
       label: 'Kinh Hoa Nghiêm',
-      icon: 'i-heroicons-chart-bar',
-      to: '/kinh-hoa-nghiem',
+      to: '/sutras/kinh-hoa-nghiem',
     },
     {
       label: 'Lương Hoàng Sám',
-      icon: 'i-heroicons-chart-bar',
-      to: '/kinh-hoa-nghiem',
+      to: '/repentances/compassionate-water-repentance-ritual',
     },
   ],
   [
     {
       label: 'Thời Khóa Tu',
-      icon: 'i-heroicons-light-bulb',
       to: '/components/command-palette',
     },
     {
       label: 'Download / Tải xuống',
-      icon: 'i-heroicons-light-bulb',
       to: '/download-buddhism-documents',
     },
   ]
@@ -123,6 +124,7 @@ const isDark = computed({
 <style scoped lang="scss">
 .top-bar-component {
   width: 100vw;
+  max-height: 150px;
 }
 </style>
 

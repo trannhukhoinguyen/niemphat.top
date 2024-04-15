@@ -9,30 +9,13 @@
 </template>
 
 <script setup>
-
-
-const sutraSource = [
-    {
-        type: 'sutra',
-        name: 'Kinh Trường Bộ',
-        src: 'https://thuvienhoasen.org/images/file/zqfZjip_1ggQAIJ4/kinhtruongbo.pdf',
-    }
-];
-const vinayaSource = [
-    {
-        type: 'vinaya',
-        name: 'Luật',
-        src: 'https://phatgiao.org.vn/tu-dien-phat-hoc-online/kinh-luat-luan-k54861.html',
-    }
-];
-const sastraSource = [
-    {
-        type: 'sastra',
-        name: 'Luận',
-        src: 'https://phatgiao.org.vn/tu-dien-phat-hoc-online/kinh-luat-luan-k54861.html',
-    }
-];
-const fileSource = ref(sutraSource);
+const props = defineProps({
+    fileSource: {
+        type: Array,
+        required: true,
+    },
+});
+const fileTypes = ['sutra', 'vinaya', 'sastra'];
 </script>
 
 <style scoped lang="scss">

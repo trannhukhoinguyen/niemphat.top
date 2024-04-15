@@ -12,12 +12,7 @@
 
 <script setup>
 import '@unocss/reset/tailwind.css';
-import NavBar from "/components/Posts/NavBar.vue";
-import IframeModal from "/components/Posts/IframeModal.vue";
-import Modal from "/components/Posts/photo/Modal.vue";
-definePageMeta({
-    layout: 'guest',
-});
+
 const nuxtApp = useNuxtApp();
 nuxtApp.hook('page:finish', () => {
     window.scrollTo(0, 0);
@@ -29,9 +24,9 @@ useHead({
     },
     charset: 'utf-8',
     title: 'app.vue',
-    titleTemplate: title => title !== 'Nuxt Movies' ? `${title} · Nuxt Movies` : title,
+    titleTemplate: title => title !== 'Namo Amitābha ✨' ? `${title} · Namo Amitābha ✨` : title,
     meta: [
-        { name: 'description', content: 'A Di Đà Phật ✨' },
+        { name: 'description', content: 'Namo Amitābha ✨' },
         { property: 'og:image', content: 'https://movies.nuxt.space/social-card.png' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@nuxt_js' },
@@ -41,7 +36,7 @@ useHead({
         {
             rel: 'icon',
             type: 'image/webp',
-            href: '/assets/images/posts/movies.webp',
+            href: '/assets/images/logo_1.png',
         },
     ],
 })

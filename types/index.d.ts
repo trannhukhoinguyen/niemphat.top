@@ -27,27 +27,27 @@ declare global {
 
 // defaults
     {
-        date: null,
-            view: "",
-        events: () => [],
-        loading: false,
+        date: null;
+        view: "";
+        events: () => [];
+        loading: false;
         config: () => ({
-        actions: {
-            view: {
-                enabled: true,
-                icon: true,
-                text: "",
+            actions: {
+                view: {
+                    enabled: true,
+                    icon: true,
+                    text: "",
+                },
+                report: {
+                    enabled: true,
+                    icon: true,
+                    text: "",
+                },
             },
-            report: {
-                enabled: true,
-                icon: true,
-                text: "",
-            },
-        },
-        searchPlaceHolder: "",
-        eventName: "",
-        closeText: "",
-    }),
+            searchPlaceHolder: "",
+            eventName: "",
+            closeText: "",
+        });
     }
 
     interface Appointment {

@@ -1,5 +1,5 @@
 <template>
-  <div class="top-bar-component">
+  <div class="bottom-bar-component">
     <UHorizontalNavigation :links="links" class="border-b border-gray-200 dark:border-gray-800" />
   </div>
 </template>
@@ -29,10 +29,9 @@ const links = [{
 </script>
 
 <style scoped lang="scss">
-.top-bar-component {
-  top: 0;
+.bottom-bar-component {
   width: 100vw;
-  height: 100vh;
+  max-height: 150px;
 }
 </style>
 
