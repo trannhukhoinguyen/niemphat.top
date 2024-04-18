@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-
+    <Lotus />
   </div>
 </template>
 
