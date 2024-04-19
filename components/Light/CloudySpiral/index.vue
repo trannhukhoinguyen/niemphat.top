@@ -1,8 +1,12 @@
 <template>
     <div class="cloudy-spiral-wrapper">
-        <div class="animation_cover">
-            <div class="firefly" v-for="(_, index) in quantity" :key="index"></div>
+        <div class="wrapper">
+            <% (1..62).each do %>
+            <i></i>
+            <% end %>
         </div>
+
+        <a href="#black" id="black"></a>
     </div>
 </template>
 
@@ -11,96 +15,87 @@ const quantity = ref(25);;
 </script>
 
 <style lang="scss" scoped>
-$quantity: 25;
-$color: yellow;
+@import "compass/css3";
 
-.animation_cover {
-    background: url("https://dlgarenanow-a.akamaihd.net/mgames/kgtw/events/202012SkinReview/assets/mainpage/mainpage-bg.jpg")
-    center / cover no-repeat;
-    pointer-events: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 50;
-    .firefly {
-        position: fixed;
-        left: 50%;
+$particles: 62; // has to match nodes in dom
+$particleSize: 8px;
+$radius: 80;
+$lapDuration: 3s;
+
+.cloudy-spiral-wrapper {
+    html, body {
+        overflow: hidden;
+        background: #3e6fa3;
+    }
+
+    .wrapper {
+        position: absolute;
         top: 50%;
-        width: 6px;
-        height: 6px;
-        margin: -0.2vw 0 0 9.8vw;
-        animation: ease 200s alternate infinite;
+        left: 50%;
+        z-index: 2;
 
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            transform-origin: -10vw;
-        }
+        @include perspective(500px);
+    }
 
-        &::before {
-            opacity: 0.4;
-            animation: drift ease alternate infinite;
-        }
+    i {
+        display: block;
+        position: absolute;
+        width: $particleSize;
+        height: $particleSize;
+        border-radius: $particleSize;
+        opacity: 0;
+        background: rgba(255,255,255,0.5);
+        box-shadow: 0px 0px 10px rgba(255,255,255,1);
 
-        &::after {
-            background: white;
-            opacity: 0;
-            box-shadow: 0 0 0vw 0vw $color;
-            animation: drift ease alternate infinite, flash ease infinite;
+        animation-name: spin;
+        animation-duration: $lapDuration;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    @for $i from 1 through $particles {
+        i:nth-child(#{$i}) {
+            $angle: ( $i / $particles ) * 720;
+
+            @include transform(
+                    rotate( #{$angle}deg )
+                    translate3d( #{$radius}px, 0, 0 )
+            );
+
+            animation-delay: $i * ($lapDuration / $particles);
         }
     }
 
-    // Randomize Fireflies Motion
-    @for $i from 1 through $quantity {
-        $steps: random(12) + 16;
-        $rotationSpeed: random(10) + 8s;
-
-        .firefly:nth-child(#{$i}) {
-            animation-name: move#{$i};
-
-            &::before {
-                animation-duration: #{$rotationSpeed};
-            }
-            &::after {
-                animation-duration: #{$rotationSpeed}, random(6000) + 5000ms;
-                animation-delay: 0ms, random(8000) + 500ms;
-            }
+    @keyframes spin {
+        from {
+            opacity: 0.0;
         }
-        @keyframes move#{$i} {
-            @for $step from 0 through $steps {
-                #{$step / $steps * 100%} {
-                    transform: translateX(random(100) - 50vw)
-                    translateY(random(100) - 50vh)
-                    scale(random(75) / 100 + 0.25);
-                }
-            }
+        to {
+            opacity: 0.6;
+            transform: translate3d(-$particleSize/2, -$particleSize/2, 570px);
         }
     }
-    @keyframes drift {
-        0% {
-            transform: rotate(0deg);
-        }
+    // background color controls
+    #black {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        color: rgba(255,255,255,0.6);
+        text-decoration: none;
 
-        100% {
-            transform: rotate(360deg);
-        }
+        &:after { content: 'Black & white'; }
     }
-    @keyframes flash {
-        0%,
-        30%,
-        100% {
-            opacity: 0;
-            box-shadow: 0 0 0vw 0vw $color;
-        }
 
-        5% {
-            opacity: 1;
-            box-shadow: 0 0 2vw 0.4vw $color;
-        }
+    #black:target {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: #111;
+        cursor: default;
+
+        &:after { content: ''; }
     }
 }
 </style>
