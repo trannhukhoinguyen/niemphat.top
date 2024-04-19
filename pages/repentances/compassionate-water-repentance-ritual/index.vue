@@ -1,5 +1,4 @@
 <template>
-    123
   <div class="compassionate-water-repentance-ritual-page-wrapper">
       <PdfViewer :file-source="fileSource" />
   </div>

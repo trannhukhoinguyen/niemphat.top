@@ -1,9 +1,13 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
-
   ssr: false,
-
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
   css: [
 
   ],

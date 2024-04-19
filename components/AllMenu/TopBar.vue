@@ -1,13 +1,12 @@
 <template>
-  <div class="top-bar-component" style="left: 0; margin-right: 200px">
+  <div class="top-bar-component">
     <UContainer>
       <UHorizontalNavigation :links="topBarLinks" class="border-b border-gray-200 dark:border-gray-800">
-          <template #icon>
-              <template v-if="true">&#68181;</template>
-              <template v-if="topBarLinks.length">&#129367;</template>
+          <template #icon="{ link }">
+              <span class="group-hover:text-primary relative">{{ link?.icon }} &#68181;</span>
           </template>
           <template #default="{ link }">
-              <span class="group-hover:text-primary relative">{{ link.label }}</span>
+              <span class="group-hover:text-primary relative">{{ link?.label }}</span>
           </template>
       </UHorizontalNavigation>
       <ClientOnly>
@@ -32,10 +31,7 @@
         />
         <UButton color="white" label="Profile" trailing-icon="i-heroicons-chevron-down-20-solid" />
       </UDropdown>-->
-
     </UContainer>
-
-
   </div>
 </template>
 
@@ -44,8 +40,12 @@ const topBarLinks = [
   [
     {
       label: 'Home',
+      icon: 'Home',
       to: '/home',
-    }
+    },
+    {
+      label: 'Theme',
+    },
   ],
   [
     {
@@ -123,8 +123,26 @@ const isDark = computed({
 
 <style scoped lang="scss">
 .top-bar-component {
-  width: 100vw;
-  max-height: 150px;
+  margin-right: 0;
+  .max-w-7xl {
+    max-width: 100%;
+  }
+  @media (min-width: 1024px) {
+    .lg\:px-8 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media (min-width: 640px) {
+    .sm\:px-6 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .px-4 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 </style>
 

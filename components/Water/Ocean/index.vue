@@ -18,8 +18,8 @@
 
 <script setup>
 
-import Bubbles from "/components/Ocean/Bubbles.vue";
-import Waves from "/components/Ocean/Waves.vue";
+import Bubbles from "/components/Water/Ocean/Bubbles.vue";
+import Waves from "/components/Water/Ocean/Waves.vue";
 </script>
 
 <style scoped lang="scss">

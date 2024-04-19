@@ -1,6 +1,10 @@
 <template>
   <div class="home-page">
-    <Lotus />
+      <Lotus
+              :isYellowLotus="true"
+              :isPinkLotus="false"
+      />
+      <Lotus />
   </div>
 </template>
 
