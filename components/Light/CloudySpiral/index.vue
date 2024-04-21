@@ -1,12 +1,11 @@
 <template>
     <div class="cloudy-spiral-wrapper">
-        <div class="wrapper">
-            <% (1..62).each do %>
-            <i></i>
-            <% end %>
-        </div>
-
-        <a href="#black" id="black"></a>
+      <div class='wrapper'>
+        <template v-for="i in 62">
+          <i :class="`icon-${i}`"></i>
+        </template>
+      </div>
+      <a href='#black' id='black'></a>
     </div>
 </template>
 

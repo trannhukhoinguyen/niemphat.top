@@ -40,7 +40,6 @@ const topBarLinks = [
   [
     {
       label: 'Home',
-      icon: 'Home',
       to: '/home',
     },
     {

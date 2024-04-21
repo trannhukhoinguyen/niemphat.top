@@ -1,10 +1,11 @@
 <template>
   <div class="home-page">
-      <Lotus
+<!--      <Lotus
               :isYellowLotus="true"
               :isPinkLotus="false"
       />
-      <Lotus />
+      <Lotus />-->
+    <plane-opening-store />
   </div>
 </template>
 

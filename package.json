@@ -23,6 +23,7 @@
     "@nuxtjs/i18n": "^8.2.0",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@vitejs/plugin-vue": "^5.0.4",
+    "css-doodle": "^0.39.0",
     "dayjs": "^1.11.10",
     "eslint-config-prettier": "^9.1.0",
     "nuxt": "^3.10.2",

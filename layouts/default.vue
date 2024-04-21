@@ -29,7 +29,6 @@ useHead({
   .footer-section {
     text-align: center;
     position: relative;
-    bottom: 0;
   }
 }
 </style>
