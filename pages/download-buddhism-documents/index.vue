@@ -2,10 +2,6 @@
   <Download />
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<styles scoped lang="scss">
-
-</styles>
+<styles scoped lang="scss"></styles>

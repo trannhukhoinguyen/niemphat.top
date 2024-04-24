@@ -10,7 +10,7 @@
         </div>
       </div>
     </div>
-<!--    <footer class="layout-footer" style="padding: 0px">
+    <!--    <footer class="layout-footer" style="padding: 0px">
       <div class="pro-global-footer">
         <div class="pro-global-footer-copyright">
             <p>Nguyện sanh Tây-phương Tịnh độ trung</p>
@@ -26,7 +26,7 @@
 <script setup>
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? titleChunk : 'guest-layout';
+    return titleChunk ? titleChunk : "guest-layout";
   },
 });
 </script>
@@ -123,5 +123,4 @@ useHead({
     width: 100%;
   }
 }
-
 </style>

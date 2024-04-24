@@ -1,32 +1,54 @@
 <template>
-    <div class="hand-book-wrapper">
-        <div class="container">
-            <div class="box box-1">
-                <div class="cover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-893bc9989a52eba0.png" alt=""></div>
-                <button><div></div></button>
-            </div>
-            <div class="box box-2">
-                <div class="cover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-964edcf0f07211b0.png" alt=""></div>
-                <button><div></div></button>
-            </div>
-            <div class="box box-3">
-                <div class="cover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-2ebb2b6f93add843.png" alt=""></div>
-                <button><div></div></button>
-            </div>
-            <div class="box box-4">
-                <div class="cover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-f79c4cc8de2f84ae.png" alt=""></div>
-                <button><div></div></button>
-            </div>
-
+  <div class="hand-book-wrapper">
+    <div class="container">
+      <div class="box box-1">
+        <div class="cover">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-893bc9989a52eba0.png"
+            alt=""
+          />
         </div>
-
-        <a href="https://dribbble.com/YancyMin" class="dr-url" target="_blank"><img class="dr" src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png" alt=""></a>
+        <button><div></div></button>
+      </div>
+      <div class="box box-2">
+        <div class="cover">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-964edcf0f07211b0.png"
+            alt=""
+          />
+        </div>
+        <button><div></div></button>
+      </div>
+      <div class="box box-3">
+        <div class="cover">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-2ebb2b6f93add843.png"
+            alt=""
+          />
+        </div>
+        <button><div></div></button>
+      </div>
+      <div class="box box-4">
+        <div class="cover">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-f79c4cc8de2f84ae.png"
+            alt=""
+          />
+        </div>
+        <button><div></div></button>
+      </div>
     </div>
+
+    <a href="https://dribbble.com/YancyMin" class="dr-url" target="_blank"
+      ><img
+        class="dr"
+        src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png"
+        alt=""
+    /></a>
+  </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style scoped lang="scss">
 .hand-book-wrapper {
@@ -65,12 +87,11 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #2C3138;
+    background-color: #2c3138;
     -webkit-perspective: 90rem;
     perspective: 90rem;
     -webkit-perspective-origin: 34% 61%;
     perspective-origin: 34% 61%;
-
   }
 
   img {
@@ -83,11 +104,11 @@
     width: 180px;
     height: 48px;
     border-radius: 8px;
-    background-color: #2C3138;
+    background-color: #2c3138;
     margin-top: 40px;
     overflow: hidden;
-    -webkit-transform: scale(.7);
-    transform: scale(.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
   }
 
   button::after {
@@ -101,7 +122,7 @@
     margin-top: -1px;
     margin-left: -7px;
     border-radius: 6px 0 0 6px;
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTRweCIgaGVpZ2h0PSIxN3B4IiB2aWV3Qm94PSIwIDAgMTQgMTciIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUxLjEgKDU3NTAxKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TaGFwZTwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJEZXNrdG9wLUhELUNvcHktMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTYwOS4wMDAwMDAsIC0xMDA4LjAwMDAwMCkiIGZpbGw9IiNGOUZDRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0xMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTQ3LjAwMDAwMCwgNDk5LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTYtQ29weSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDYuMDAwMDAwLCA0OTUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9ImljX2ZpbGVfZG93bmxvYWRfYmxhY2tfMjRweC0oMSkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2LjAwMDAwMCwgOC4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTE0LDEyIEwxMCwxMiBMMTAsNiBMNCw2IEw0LDEyIEwwLDEyIEw3LDE5IEwxNCwxMiBaIE0wLDIxIEwwLDIzIEwxNCwyMyBMMTQsMjEgTDAsMjEgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=');
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTRweCIgaGVpZ2h0PSIxN3B4IiB2aWV3Qm94PSIwIDAgMTQgMTciIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUxLjEgKDU3NTAxKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TaGFwZTwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJEZXNrdG9wLUhELUNvcHktMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTYwOS4wMDAwMDAsIC0xMDA4LjAwMDAwMCkiIGZpbGw9IiNGOUZDRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0xMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTQ3LjAwMDAwMCwgNDk5LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTYtQ29weSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDYuMDAwMDAwLCA0OTUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9ImljX2ZpbGVfZG93bmxvYWRfYmxhY2tfMjRweC0oMSkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2LjAwMDAwMCwgOC4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTE0LDEyIEwxMCwxMiBMMTAsNiBMNCw2IEw0LDEyIEwwLDEyIEw3LDE5IEwxNCwxMiBaIE0wLDIxIEwwLDIzIEwxNCwyMyBMMTQsMjEgTDAsMjEgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -119,26 +140,26 @@
 
   .box-1:hover button::before {
     width: 120%;
-    opacity: .8;
-    background-color: #00BF9C;
+    opacity: 0.8;
+    background-color: #00bf9c;
   }
 
   .box-2:hover button::before {
     width: 120%;
-    opacity: .8;
-    background-color: #653EE6;
+    opacity: 0.8;
+    background-color: #653ee6;
   }
 
   .box-3:hover button::before {
     width: 120%;
-    opacity: .8;
-    background-color: #008BFF;
+    opacity: 0.8;
+    background-color: #008bff;
   }
 
   .box-4:hover button::before {
     width: 120%;
-    opacity: .8;
-    background-color: #FF6500;
+    opacity: 0.8;
+    background-color: #ff6500;
   }
 
   .container {
@@ -168,8 +189,8 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     will-change: transform;
   }
 
@@ -179,7 +200,7 @@
   }
 
   .box-1 button {
-    border: 1px solid #00BF9C;
+    border: 1px solid #00bf9c;
     color: #fff;
     font-size: 22px;
     text-align: right;
@@ -189,12 +210,12 @@
 
   .box-1 button::after {
     content: "";
-    background-color: #00BF9C;
-    top: -85px
+    background-color: #00bf9c;
+    top: -85px;
   }
 
   .box-2 button {
-    border: 1px solid #653EE6;
+    border: 1px solid #653ee6;
     color: #fff;
     font-size: 22px;
     text-align: right;
@@ -204,12 +225,12 @@
 
   .box-2 button::after {
     content: "";
-    background-color: #653EE6;
-    top: -85px
+    background-color: #653ee6;
+    top: -85px;
   }
 
   .box-3 button {
-    border: 1px solid #008BFF;
+    border: 1px solid #008bff;
     color: #fff;
     font-size: 22px;
     text-align: right;
@@ -219,12 +240,12 @@
 
   .box-3 button::after {
     content: "";
-    background-color: #008BFF;
-    top: -85px
+    background-color: #008bff;
+    top: -85px;
   }
 
   .box-4 button {
-    border: 1px solid #FF6500;
+    border: 1px solid #ff6500;
     color: #fff;
     font-size: 22px;
     text-align: right;
@@ -234,8 +255,8 @@
 
   .box-4 button::after {
     content: "";
-    background-color: #FF6500;
-    top: -85px
+    background-color: #ff6500;
+    top: -85px;
   }
 
   .cover {
@@ -267,8 +288,8 @@
     -webkit-transition: all 260ms ease-in-out;
     transition: all 260ms ease-in-out;
     will-change: transform;
-    -webkit-transform: scale(.6);
-    transform: scale(.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
 
   .box:hover .cover::after {
@@ -278,27 +299,27 @@
   }
 
   .box-1 .cover::after {
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-893bc9989a52eba0.png');
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-893bc9989a52eba0.png");
   }
 
   .box-2 .cover::after {
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-964edcf0f07211b0.png');
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-964edcf0f07211b0.png");
   }
 
   .box-3 .cover::after {
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-2ebb2b6f93add843.png');
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-2ebb2b6f93add843.png");
   }
 
   .box-4 .cover::after {
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-f79c4cc8de2f84ae.png');
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-f79c4cc8de2f84ae.png");
   }
 
   .box-1 button div::before {
-    content: 'Sensebot';
+    content: "Sensebot";
     position: relative;
     top: -44px;
     left: -4px;
-    color: #00BF9C;
+    color: #00bf9c;
     font-size: 21px;
     font-weight: 300;
   }
@@ -308,7 +329,7 @@
   }
 
   .box-2 button div::before {
-    content: 'OnePass';
+    content: "OnePass";
     position: relative;
     top: -44px;
     left: -6px;
@@ -322,11 +343,11 @@
   }
 
   .box-3 button div::before {
-    content: 'DeepKnow';
+    content: "DeepKnow";
     position: relative;
     top: -44px;
     left: 3px;
-    color: #008BFF;
+    color: #008bff;
     font-size: 21px;
     font-weight: 300;
   }
@@ -336,11 +357,11 @@
   }
 
   .box-4 button div::before {
-    content: 'Scanner';
+    content: "Scanner";
     position: relative;
     top: -44px;
     left: -9px;
-    color: #FF6500;
+    color: #ff6500;
     font-size: 21px;
     font-weight: 300;
   }
@@ -353,7 +374,7 @@
     position: absolute;
     bottom: 16px;
     right: 16px;
-    width:100px;
+    width: 100px;
   }
 }
 </style>

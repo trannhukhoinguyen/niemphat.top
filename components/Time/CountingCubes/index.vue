@@ -136,84 +136,183 @@
 </template>
 
 <script setup lang="ts">
-
 // Cube matrix
 const matrix = [
   [
-    false, true, false,
-    false, true, false,
-    false, true, false,
-    false, true, false,
-    false, true, false
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
   ],
   [
-    true, true, true,
-    false, false, true,
-    true, true, true,
-    true, false, false,
-    true, true, true
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
   ],
   [
-    true, true, true,
-    false, false, true,
-    false, true, true,
-    false, false, true,
-    true, true, true
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
   ],
   [
-    true, false, true,
-    true, false, true,
-    true, true, true,
-    false, false, true,
-    false, false, true
+    true,
+    false,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
   ],
   [
-    true, true, true,
-    true, false, false,
-    true, true, true,
-    false, false, true,
-    true, true, true
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
   ],
   [
-    true, true, true,
-    true, false, false,
-    true, true, true,
-    true, false, true,
-    true, true, true
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
   ],
   [
-    true, true, true,
-    false, false, true,
-    false, false, true,
-    false, false, true,
-    false, false, true
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
   ],
   [
-    true, true, true,
-    true, false, true,
-    true, true, true,
-    true, false, true,
-    true, true, true
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
   ],
   [
-    true, true, true,
-    true, false, true,
-    true, true, true,
-    false, false, true,
-    false, false, true
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
   ],
   [
-    true, true, true,
-    true, false, true,
-    true, false, true,
-    true, false, true,
-    true, true, true
-  ]
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    false,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+  ],
 ];
 
 const grad = new Date(0, 0, 0, 0, 0, 0, 0);
-const cube = document.getElementById('cubes');
-const cube2 = document.getElementById('cubes2');
+const cube = document.getElementById("cubes");
+const cube2 = document.getElementById("cubes2");
 
 function renderDigit(container: any, number: any) {
   const children = container.children().children();
@@ -221,10 +320,10 @@ function renderDigit(container: any, number: any) {
   const len = matrix[number].length;
   let state;
   for (let i = 0; i < len; i++) {
-    state = children.eq(i).data('state') || 'off';
+    state = children.eq(i).data("state") || "off";
     if (
-        (matrix[number][i] && state === 'off') ||
-        (!matrix[number][i] && state === 'on')
+      (matrix[number][i] && state === "off") ||
+      (!matrix[number][i] && state === "on")
     ) {
       rotate.call(children.eq(i));
     }
@@ -235,34 +334,35 @@ function render() {
   const now = new Date();
   const diff = String(grad.getTime() - now.getTime());
   const len = diff.length;
-  renderDigit(cube, Number(diff.charAt(len-4)));
-  renderDigit(cube2, Number(diff.charAt(len-4)));
+  renderDigit(cube, Number(diff.charAt(len - 4)));
+  renderDigit(cube2, Number(diff.charAt(len - 4)));
   requestAnimationFrame(render);
 }
 
 requestAnimationFrame(render);
 
 // Click to flip
-document.querySelectorAll('.cube').forEach((elem) => {
-  elem.addEventListener('click', rotate);
+document.querySelectorAll(".cube").forEach((elem) => {
+  elem.addEventListener("click", rotate);
 });
 
 function rotate() {
-  let angle = (parseInt(this.dataset.angle) + -90) || -90;
-  const state = this.dataset.state || 'off';
+  let angle = parseInt(this.dataset.angle) + -90 || -90;
+  const state = this.dataset.state || "off";
   this.style.transform = `rotateX(${angle}deg)`;
   this.dataset.angle = angle;
-  this.dataset.state = (state === 'on') ? 'off' : 'on';
+  this.dataset.state = state === "on" ? "off" : "on";
 }
 </script>
 
 <style scoped lang="scss">
 .counting-cubes-wrapper {
-
   .timerWrap {
     background: rgba(0, 0, 0, 1);
-    box-shadow: 40px 20px 110px rgba(0, 0, 0, 0.1),
-    110px 110px 300px rgba(0, 0, 0, 0.4), 10px 60px 140px rgba(0, 0, 0, 0.5);
+    box-shadow:
+      40px 20px 110px rgba(0, 0, 0, 0.1),
+      110px 110px 300px rgba(0, 0, 0, 0.4),
+      10px 60px 140px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
     margin: 50px;
   }
@@ -349,10 +449,9 @@ function rotate() {
     justify-content: center;
   }
 
-
   @media (max-height: 600px) {
     .timerWrap {
-      transform: scale(.8);
+      transform: scale(0.8);
     }
   }
 }

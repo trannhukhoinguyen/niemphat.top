@@ -1,26 +1,24 @@
 <template>
-    <div class="bird-wrapper" style="">
-        <div class="bird-container bird-container--one">
-            <div class="bird bird--one"></div>
-        </div>
-
-        <div class="bird-container bird-container--two">
-            <div class="bird bird--two"></div>
-        </div>
-
-        <div class="bird-container bird-container--three">
-            <div class="bird bird--three"></div>
-        </div>
-
-        <div class="bird-container bird-container--four">
-            <div class="bird bird--four"></div>
-        </div>
+  <div class="bird-wrapper" style="">
+    <div class="bird-container bird-container--one">
+      <div class="bird bird--one"></div>
     </div>
+
+    <div class="bird-container bird-container--two">
+      <div class="bird bird--two"></div>
+    </div>
+
+    <div class="bird-container bird-container--three">
+      <div class="bird bird--three"></div>
+    </div>
+
+    <div class="bird-container bird-container--four">
+      <div class="bird bird--four"></div>
+    </div>
+  </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="scss">
 .bird-wrapper {
@@ -97,10 +95,9 @@
         animation-duration: 1.1s;
         animation-delay: -0.5s;
       }
-
     }
   }
-};
+}
 
 @keyframes fly-cycle {
   100% {
@@ -139,7 +136,6 @@
   100% {
     transform: translateY(0vh) translateX(110vw) scale(0.6);
   }
-
 }
 @keyframes fly-right-two {
   0% {
@@ -173,6 +169,5 @@
   100% {
     transform: translateY(0vh) translateX(110vw) scale(0.45);
   }
-
 }
 </style>

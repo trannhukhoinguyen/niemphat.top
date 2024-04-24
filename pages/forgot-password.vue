@@ -11,55 +11,60 @@
       <h2 class="ant-pro-form-login-title">QUÊN MẬT KHẨU</h2>
     </div>
     <div v-if="otherState.error">
-      <alert message="Yêu cầu quên mật khẩu không thành công." type="error" style="margin-bottom: 24px" show-icon />
+      <alert
+        message="Yêu cầu quên mật khẩu không thành công."
+        type="error"
+        style="margin-bottom: 24px"
+        show-icon
+      />
     </div>
-      <UCard>
-          <template #header>
-              <UInput
-                      :padded="true"
-                      size="sm"
-                      v-model="value"
-                      color="primary"
-                      variant="outline"
-                      placeholder="Email đăng nhập"
-                      class="w-full"
-              >
-                  <template #leading>
-                      <UAvatar
-                              src="https://avatars.githubusercontent.com/u/739984?v=4"
-                              size="3xs"
-                              class="mx-0.5"
-                      />
-                  </template>
-                  <template #trailing>
-                      <UButton
-                              v-show="q !== ''"
-                              color="gray"
-                              variant="link"
-                              :padded="false"
-                              @click="q = ''"
-                      />
-                  </template>
-              </UInput>
-              <Placeholder class="h-8" />
+    <UCard>
+      <template #header>
+        <UInput
+          :padded="true"
+          size="sm"
+          v-model="value"
+          color="primary"
+          variant="outline"
+          placeholder="Email đăng nhập"
+          class="w-full"
+        >
+          <template #leading>
+            <UAvatar
+              src="https://avatars.githubusercontent.com/u/739984?v=4"
+              size="3xs"
+              class="mx-0.5"
+            />
           </template>
+          <template #trailing>
+            <UButton
+              v-show="q !== ''"
+              color="gray"
+              variant="link"
+              :padded="false"
+              @click="q = ''"
+            />
+          </template>
+        </UInput>
+        <Placeholder class="h-8" />
+      </template>
 
-          <template #footer>
-              <div style="display: flex; justify-content: center">
-                  <UButton>Gửi</UButton>
-              </div>
-              <Placeholder class="h-8" />
-          </template>
-      </UCard>
+      <template #footer>
+        <div style="display: flex; justify-content: center">
+          <UButton>Gửi</UButton>
+        </div>
+        <Placeholder class="h-8" />
+      </template>
+    </UCard>
   </form>
 </template>
 
 <script setup lang="ts">
-const value = ref('')
-const q = ref('')
+const value = ref("");
+const q = ref("");
 const formRef = ref();
 const formState = reactive({
-  email: '',
+  email: "",
 });
 const otherState = reactive({
   error: false,
@@ -70,7 +75,7 @@ const onFinish = (values) => {
 
   for (let key in input) {
     if (input.hasOwnProperty(key)) {
-      if (input[key] === null || input[key] === '') {
+      if (input[key] === null || input[key] === "") {
         delete input[key];
       }
     }
@@ -84,7 +89,7 @@ const onFinish = (values) => {
     .then(({ data }) => {
       otherState.error = false;
       formRef.value.resetFields();
-      router.push('/login');
+      router.push("/login");
     })
     .catch((e) => {
       otherState.error = true;
@@ -93,10 +98,8 @@ const onFinish = (values) => {
 };
 
 const onFinishFailed = (errorInfo) => {
-  console.log('Failed:', errorInfo);
+  console.log("Failed:", errorInfo);
 };
 </script>
 
-<style scope lang="scss">
-
-</style>
+<style scope lang="scss"></style>

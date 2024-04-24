@@ -1,13 +1,7 @@
 <template>
-<Gate />
+  <Gate />
 </template>
 
-<script lang="ts" setup>
+<script lang="ts" setup></script>
 
-
-
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

@@ -1,23 +1,26 @@
 <template>
   <a-card style="" class="ocean-container-card">
-    <div class="ocean-wrapper" style="" title="Đại dương Sinh Tử (Ocean of Life and Death)">
-        <div>
-            <Turtle />
-        </div>
+    <div
+      class="ocean-wrapper"
+      style=""
+      title="Đại dương Sinh Tử (Ocean of Life and Death)"
+    >
+      <div>
+        <Turtle />
+      </div>
 
-        <div>
-            <Bubbles />
-        </div>
+      <div>
+        <Bubbles />
+      </div>
 
-        <div>
-            <Waves />
-        </div>
+      <div>
+        <Waves />
+      </div>
     </div>
   </a-card>
 </template>
 
 <script setup>
-
 import Bubbles from "/components/Water/Ocean/Bubbles.vue";
 import Waves from "/components/Water/Ocean/Waves.vue";
 </script>

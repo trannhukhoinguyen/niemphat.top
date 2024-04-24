@@ -1,15 +1,7 @@
 <template>
-  <div class="repentance-page-wrapper">
-
-  </div>
+  <div class="repentance-page-wrapper"></div>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts" setup></script>
 
-
-
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

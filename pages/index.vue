@@ -1,8 +1,8 @@
 <script setup lang="ts">
 definePageMeta({
-  middleware: ['auth'],
+  middleware: ["auth"],
 });
-const appConfig = useAppConfig()
+const appConfig = useAppConfig();
 
-console.log(appConfig.theme)
+console.log(appConfig.theme);
 </script>

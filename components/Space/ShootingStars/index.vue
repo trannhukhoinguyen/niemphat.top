@@ -2,15 +2,13 @@
   <div class="shooting-stars-wrapper">
     <div class="stars">
       <template v-for="i in 50">
-        <div :class="`star star-${i}`"/>
+        <div :class="`star star-${i}`" />
       </template>
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="scss">
 .shooting-stars-wrapper {
@@ -63,7 +61,9 @@
     border-radius: 50%;
     filter: drop-shadow(0 0 6px currentColor);
     transform: translate3d(104em, 0, 0);
-    animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+    animation:
+      fall var(--fall-duration) var(--fall-delay) linear infinite,
+      tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
 
     @include sp-layout {
       // For mobile performance, tail-fade animation will be removed QAQ
@@ -79,14 +79,20 @@
       }
     }
 
-    &::before, &::after {
+    &::before,
+    &::after {
       position: absolute;
-      content: '';
+      content: "";
       top: 0;
       left: calc(var(--star-width) / -2);
       width: var(--star-width);
       height: 100%;
-      background: linear-gradient(45deg, transparent, currentColor, transparent);
+      background: linear-gradient(
+        45deg,
+        transparent,
+        currentColor,
+        transparent
+      );
       border-radius: inherit;
       animation: blink 2s linear infinite;
     }
@@ -107,12 +113,14 @@
   }
 
   @keyframes tail-fade {
-    0%, 50% {
+    0%,
+    50% {
       width: var(--star-tail-length);
       opacity: 1;
     }
 
-    70%, 80% {
+    70%,
+    80% {
       width: 0;
       opacity: 0.4;
     }

@@ -5,43 +5,67 @@
         <!-- Repeat 8 times -->
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
 
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
       </ul>
@@ -52,33 +76,51 @@
         <!-- Repeat 6 times -->
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
 
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
       </ul>
@@ -89,17 +131,26 @@
         <!-- Repeat 3 times -->
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
         <li>
           <svg viewBox="0 0 72 200">
-            <path filter="url(#dropShadow1)" d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"></path>
+            <path
+              filter="url(#dropShadow1)"
+              d="M0,100 C0,66.6666667 12,33.3333333 36,0 C60,33.3333333 72,66.666667 72,100 C72,133.333333 60,166.666667 36,200 C12,166.666667 0,133.333333 0,100 Z"
+            ></path>
           </svg>
         </li>
       </ul>
@@ -107,13 +158,20 @@
 
     <svg class="gradient">
       <defs>
-        <radialGradient cx="50%" cy="5%" fx="50%" fy="5%" r="110%" id="gradient">
-          <stop offset="0%" stop-color="#FCFDF2"/>
-          <stop offset="50%" stop-color="yellow" v-if="isYellowLotus"/>
-          <stop offset="100%" stop-color="#E9BABA" v-if="isPinkLotus"/>
+        <radialGradient
+          cx="50%"
+          cy="5%"
+          fx="50%"
+          fy="5%"
+          r="110%"
+          id="gradient"
+        >
+          <stop offset="0%" stop-color="#FCFDF2" />
+          <stop offset="50%" stop-color="yellow" v-if="isYellowLotus" />
+          <stop offset="100%" stop-color="#E9BABA" v-if="isPinkLotus" />
         </radialGradient>
         <filter id="dropShadow1">
-            <feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.4"/>
+          <feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.4" />
         </filter>
       </defs>
     </svg>
@@ -122,14 +180,14 @@
 
 <script lang="ts" setup>
 const props = defineProps({
-    isYellowLotus: {
-        type: Boolean,
-        default: false,
-    },
-    isPinkLotus: {
-        type: Boolean,
-        default: true,
-    },
+  isYellowLotus: {
+    type: Boolean,
+    default: false,
+  },
+  isPinkLotus: {
+    type: Boolean,
+    default: true,
+  },
 });
 </script>
 
@@ -138,17 +196,24 @@ const props = defineProps({
   body {
     width: 33%;
     perspective: 1000px;
-    background: #363A3F;
+    background: #363a3f;
   }
 
-  body, div, ul, li {
+  body,
+  div,
+  ul,
+  li {
     backface-visibility: hidden;
   }
-  div, ul, li, svg {
+  div,
+  ul,
+  li,
+  svg {
     will-change: transform;
     transform-style: preserve-3d;
   }
-  li, svg {
+  li,
+  svg {
     transform-origin: center top;
   }
 
@@ -194,7 +259,7 @@ const props = defineProps({
         svg {
           width: 72px;
           transform: rotateX(75deg);
-          animation: bloom 1000ms cubic-bezier(0,.75,.25,1) forwards;
+          animation: bloom 1000ms cubic-bezier(0, 0.75, 0.25, 1) forwards;
         }
       }
     }
@@ -210,7 +275,7 @@ const props = defineProps({
         svg {
           width: 60px;
           transform: rotateX(60deg);
-          animation: bloom 1100ms cubic-bezier(0,.75,.25,1) 150ms forwards;
+          animation: bloom 1100ms cubic-bezier(0, 0.75, 0.25, 1) 150ms forwards;
         }
       }
     }
@@ -226,18 +291,24 @@ const props = defineProps({
         svg {
           width: 48px;
           transform: rotateX(30deg);
-          animation: bloom 1200ms cubic-bezier(0,.75,.25,1) 300ms forwards;
+          animation: bloom 1200ms cubic-bezier(0, 0.75, 0.25, 1) 300ms forwards;
         }
       }
     }
   }
 
   @keyframes rotate {
-    from { transform: rotateX(70deg) rotateZ(0deg); }
-    to { transform: rotateX(70deg) rotateZ(360deg); }
+    from {
+      transform: rotateX(70deg) rotateZ(0deg);
+    }
+    to {
+      transform: rotateX(70deg) rotateZ(360deg);
+    }
   }
   @keyframes bloom {
-    to { transform: none; }
+    to {
+      transform: none;
+    }
   }
 }
 </style>

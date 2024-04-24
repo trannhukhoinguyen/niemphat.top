@@ -1,21 +1,18 @@
 <template>
-    <div class="turtle-wrapper">
-        <div class="turtle" title="Rùa Mù (Blind Turtle)">
-            <div class="turtle__head"></div>
-            <div class="turtle__legs -left"></div>
-            <div class="turtle__legs -right"></div>
-            <div class="turtle__tail"></div>
-            <div class="turtle__shell">
-                <div></div>
-            </div>
-        </div>
+  <div class="turtle-wrapper">
+    <div class="turtle" title="Rùa Mù (Blind Turtle)">
+      <div class="turtle__head"></div>
+      <div class="turtle__legs -left"></div>
+      <div class="turtle__legs -right"></div>
+      <div class="turtle__tail"></div>
+      <div class="turtle__shell">
+        <div></div>
+      </div>
     </div>
+  </div>
 </template>
 
-<script setup>
-
-
-</script>
+<script setup></script>
 
 <style scoped lang="scss">
 /* TURTLE */
@@ -33,31 +30,36 @@
     width: 75px;
     height: 85px;
     border-radius: 50%;
-    background-color: #82C49F;
+    background-color: #82c49f;
     position: relative;
     top: 22%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    &::before, &::after {
+    &::before,
+    &::after {
       top: 20px;
       width: 8px;
       height: 3px;
       border-radius: 50%;
       background-color: white;
       box-shadow: 1px 1px 1px 1px lightgray;
-      content: '';
+      content: "";
       position: absolute;
     }
 
-    &::before {left: 13px}
-    &::after {right: 13px}
+    &::before {
+      left: 13px;
+    }
+    &::after {
+      right: 13px;
+    }
   }
 
   &__shell {
     width: 220px;
     height: 250px;
-    background-color: #6A757A;
+    background-color: #6a757a;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
@@ -67,7 +69,7 @@
 
     &::before,
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 50%;
       left: 50%;
@@ -76,7 +78,7 @@
     &::before {
       width: 200px;
       height: 235px;
-      background-color: #5D666B;
+      background-color: #5d666b;
       transform: translate(-50%, -50%);
       border-radius: 50%;
     }
@@ -92,7 +94,7 @@
     div {
       width: 120px;
       height: 80px;
-      background: #636E72;
+      background: #636e72;
       position: relative;
       top: 50%;
       left: 50%;
@@ -100,7 +102,7 @@
 
       &::before,
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
       }
@@ -109,7 +111,7 @@
         top: -30px;
         border-left: 60px solid transparent;
         border-right: 60px solid transparent;
-        border-bottom: 30px solid #636E72;
+        border-bottom: 30px solid #636e72;
       }
 
       &::after {
@@ -117,7 +119,7 @@
         left: 0;
         border-left: 60px solid transparent;
         border-right: 60px solid transparent;
-        border-top: 30px solid #636E72;
+        border-top: 30px solid #636e72;
       }
     }
   }
@@ -127,7 +129,7 @@
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 35px solid #84C3A0;
+    border-top: 35px solid #84c3a0;
     position: absolute;
     bottom: 18%;
     left: 50%;
@@ -138,7 +140,7 @@
     width: 30px;
     height: 300px;
     border-radius: 20%;
-    background-color: #82C49F;
+    background-color: #82c49f;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -157,24 +159,54 @@
 
 /* TURTLE KEYFRAMES */
 @keyframes walking-turtle-01 {
-  0% 	 {transform: translate(-50%, -50%) rotate(-40deg)}
-  25%  {transform: translate(-50%, -50%) rotate(-45deg)}
-  50%  {transform: translate(-50%, -50%) rotate(-30deg)}
-  75%  {transform: translate(-50%, -50%) rotate(-45deg)}
-  100% {transform: translate(-50%, -50%) rotate(-40deg)}
+  0% {
+    transform: translate(-50%, -50%) rotate(-40deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(-30deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-40deg);
+  }
 }
 @keyframes walking-turtle-02 {
-  0% 	 {transform: translate(-50%, -50%) rotate(40deg)}
-  25%  {transform: translate(-50%, -50%) rotate(45deg)}
-  50%  {transform: translate(-50%, -50%) rotate(35deg)}
-  75%  {transform: translate(-50%, -50%) rotate(45deg)}
-  100% {transform: translate(-50%, -50%) rotate(30deg)}
+  0% {
+    transform: translate(-50%, -50%) rotate(40deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(35deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(30deg);
+  }
 }
 @keyframes walking-turtle-03 {
-  0% 	 {transform: translate(-50%, -50%) rotate(0deg)}
-  25%  {transform: translate(-50%, -50%) rotate(3deg)}
-  50%  {transform: translate(-50%, -50%) rotate(-1deg)}
-  75%  {transform: translate(-50%, -50%) rotate(2deg)}
-  100% {transform: translate(-50%, -50%) rotate(-1deg)}
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(3deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(-1deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(2deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-1deg);
+  }
 }
 </style>

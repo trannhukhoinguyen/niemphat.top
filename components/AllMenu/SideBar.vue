@@ -1,9 +1,7 @@
 <template>
   <div class="side-bar-component">
     <UVerticalNavigation :links="leftBarlinks">
-        <template #icon>
-            &#68181;
-        </template>
+      <template #icon> &#68181; </template>
     </UVerticalNavigation>
   </div>
 </template>
@@ -12,43 +10,44 @@
 const leftBarlinks = [
   [
     {
-      label: 'Niệm Phật',
-      to: '/niem-phat',
+      label: "Niệm Phật",
+      to: "/niem-phat",
     },
     {
-      label: 'Thiền',
-      to: '/zen',
+      label: "Thiền",
+      to: "/zen",
     },
     {
-      label: 'Thiền Đốn Ngộ',
-      to: '/zen/sudden-enlightenment-zen',
-    },    {
-      label: 'Khán Thoại Đầu',
-      to: '/zen/sudden-enlightenment/',
+      label: "Thiền Đốn Ngộ",
+      to: "/zen/sudden-enlightenment-zen",
     },
     {
-      label: 'Sám Hối',
-      to: '/sam-hoi',
+      label: "Khán Thoại Đầu",
+      to: "/zen/sudden-enlightenment/",
     },
     {
-      label: 'Công Án',
-      to: '/zen/sudden-enlightenment/koans',
+      label: "Sám Hối",
+      to: "/sam-hoi",
+    },
+    {
+      label: "Công Án",
+      to: "/zen/sudden-enlightenment/koans",
     },
   ],
   [
     {
-      label: 'Xem / Nghe Pháp',
-      to: '/components/command-palette',
+      label: "Xem / Nghe Pháp",
+      to: "/components/command-palette",
     },
     {
-      label: 'Download Nhanh',
-      to: '/components/command-palette',
+      label: "Download Nhanh",
+      to: "/components/command-palette",
     },
     {
-      label: 'Hỏi / Đáp',
-      to: '/components/command-palette',
-    }
-  ]
+      label: "Hỏi / Đáp",
+      to: "/components/command-palette",
+    },
+  ],
 ];
 </script>
 

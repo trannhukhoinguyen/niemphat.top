@@ -1,8 +1,15 @@
 <template>
-  <div style="padding: 24px" class="western-pure-land-card" title="Tây Phương Cực Lạc">
+  <div
+    style="padding: 24px"
+    class="western-pure-land-card"
+    title="Tây Phương Cực Lạc"
+  >
     <!-- The video -->
     <video autoplay muted loop id="myVideo">
-      <source src="/assets/videos/Western-Pure-Land-Buddhism.mp4" type="video/mp4">
+      <source
+        src="/assets/videos/Western-Pure-Land-Buddhism.mp4"
+        type="video/mp4"
+      />
     </video>
 
     <!-- Optional: some overlay text to describe the video -->
@@ -13,7 +20,7 @@
       <UButton id="myBtn" @click="myFunction">Pause</UButton>
     </div>
 
-    <div style="padding:12px">
+    <div style="padding: 12px">
       <a href="/emancipation/prayer-and-dedication">
         <h2 class="green">PRAYER & DEDICATION (PHÁT NGUYỆN & HỒI HƯỚNG)</h2>
       </a>
@@ -23,7 +30,6 @@
       <a href="/emancipation/sudden-enlightenment">
         <h2>SUDDEN ENLIGHTENMENT MEDITATION METHOD (Đốn Ngộ Pháp Môn)</h2>
       </a>
-
     </div>
   </div>
 </template>

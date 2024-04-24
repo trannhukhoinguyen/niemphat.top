@@ -1,16 +1,13 @@
-
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
   components: [
     {
-      path: '~/components',
+      path: "~/components",
       pathPrefix: false,
     },
   ],
-  css: [
-
-  ],
+  css: [],
   vite: {
     css: {
       preprocessorOptions: {
@@ -20,83 +17,71 @@ export default defineNuxtConfig({
       },
     },
   },
-  plugins: [
-
-  ],
-  modules: [
-    '@nuxt/ui',
-    '@nuxt/image',
-    '@vueuse/nuxt',
-    '@nuxtjs/i18n',
-  ],
+  plugins: [],
+  modules: ["@nuxt/ui", "@nuxt/image", "@vueuse/nuxt", "@nuxtjs/i18n"],
   site: {
-    url: 'https://niemphat.top',
+    url: "https://niemphat.top",
   },
-  content: {
-
-  },
+  content: {},
   nitro: {
-    preset: 'node-server',
+    preset: "node-server",
     routeRules: {
-      '/**': { isr: false },
+      "/**": { isr: false },
     },
   },
   colorMode: {
-    preference: 'light'
+    preference: "light",
   },
 
   runtimeConfig: {
-    public: {
-
-    },
+    public: {},
   },
-
 
   i18n: {
     detectBrowserLanguage: {
       useCookie: true,
-      fallbackLocale: 'en',
+      fallbackLocale: "en",
     },
-    strategy: 'no_prefix',
+    strategy: "no_prefix",
     locales: [
       {
-        code: 'en',
-        name: 'English',
-        file: 'en.json',
+        code: "en",
+        name: "English",
+        file: "en.json",
       },
       {
-        code: 'de-DE',
-        name: 'Deutsch',
-        file: 'de-DE.json',
+        code: "de-DE",
+        name: "Deutsch",
+        file: "de-DE.json",
       },
       {
-        code: 'es-ES',
-        name: 'Español',
-        file: 'es-ES.json',
+        code: "es-ES",
+        name: "Español",
+        file: "es-ES.json",
       },
       {
-        code: 'ja',
-        name: '日本語',
-        file: 'ja.json',
+        code: "ja",
+        name: "日本語",
+        file: "ja.json",
       },
       {
-        code: 'zh-CN',
-        name: '简体中文',
-        file: 'zh-CN.json',
+        code: "zh-CN",
+        name: "简体中文",
+        file: "zh-CN.json",
       },
       {
-        code: 'pt-PT',
-        name: 'Português',
-        file: 'pt-PT.json',
+        code: "pt-PT",
+        name: "Português",
+        file: "pt-PT.json",
       },
       {
-        code: 'pt-BR',
-        name: 'Português do Brasil',
-        file: 'pt-BR.json',
+        code: "pt-BR",
+        name: "Português do Brasil",
+        file: "pt-BR.json",
       },
     ],
     lazy: true,
-    langDir: 'internationalization',
-    defaultLocale: 'en',
+    langDir: "internationalization",
+    defaultLocale: "en",
   },
 });

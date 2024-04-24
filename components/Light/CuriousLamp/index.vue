@@ -1,21 +1,20 @@
 <template>
-    <div class="curious-lamp-wrapper">
-      <section>
-        <div class="lampWrap">
-          <div class="lampBase"></div>
-          <div class="lampStand">
-            <div class="bar bar1">
-              <div class="bar bar2">
-                <div class="rotator">
-                  <div class="bar bar3">
-                    <div class="cord1"></div>
-                    <div class="bar bar4">
-                      <div class="cord2"></div>
-                      <div class="lampHead">
-                        <div class="lightBeam"></div>
-                        <div class="bulb"></div>
-                        <div class="lampshade"></div>
-                      </div>
+  <div class="curious-lamp-wrapper">
+    <section>
+      <div class="lampWrap">
+        <div class="lampBase"></div>
+        <div class="lampStand">
+          <div class="bar bar1">
+            <div class="bar bar2">
+              <div class="rotator">
+                <div class="bar bar3">
+                  <div class="cord1"></div>
+                  <div class="bar bar4">
+                    <div class="cord2"></div>
+                    <div class="lampHead">
+                      <div class="lightBeam"></div>
+                      <div class="bulb"></div>
+                      <div class="lampshade"></div>
                     </div>
                   </div>
                 </div>
@@ -23,59 +22,68 @@
             </div>
           </div>
         </div>
-
-        <div class="boxWrap">
-          <div class="boxRight">
-            <div class="ribbonVert"></div>
-            <div class="ribbonHorz"></div>
-          </div>
-
-          <div class="boxCenter">
-            <div class="boxLid"></div>
-            <div class="boxLidShadow"></div>
-          </div>
-
-          <div class="boxTop">
-            <div class="boxTopLid"></div>
-            <div class="boxTopShadow"></div>
-          </div>
-
-          <div class="bow"></div>
-        </div>
-
-        <div class="jar">
-          <div class="sparkle sparkle1"><span></span></div>
-          <div class="sparkle sparkle2"><span></span></div>
-          <div class="sparkle sparkle3"><span></span></div>
-          <div class="sparkle sparkle4"><span></span></div>
-          <div class="sparkle sparkle5"><span></span></div>
-          <div class="sparkle sparkle6"><span></span></div>
-          <div class="sparkle sparkle7"><span></span></div>
-          <div class="sparkle sparkle8"><span></span></div>
-          <div class="sparkle sparkle9"><span></span></div>
-          <div class="sparkle sparkle10"><span></span></div>
-
-          <svg width="149" height="149" viewBox="0 0 149 149" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M37 131.5C36.3333 126.333 36.1 112.7 40.5 99.5M46 84C54.6667 63.8333 85.3 23.2 138.5 22" stroke="black" stroke-linecap="round"/>
-          </svg>
-        </div>
-
-        <div class="footerMask">
-          <div class="deskTop"></div>
-        </div>
-      </section>
-
-      <!-- Outline toggle for animation help -->
-      <div class="outlineToggle">
-        <input type="checkbox" id="outlineToggle" />
-        <label for="outlineToggle">Outlines</label>
       </div>
+
+      <div class="boxWrap">
+        <div class="boxRight">
+          <div class="ribbonVert"></div>
+          <div class="ribbonHorz"></div>
+        </div>
+
+        <div class="boxCenter">
+          <div class="boxLid"></div>
+          <div class="boxLidShadow"></div>
+        </div>
+
+        <div class="boxTop">
+          <div class="boxTopLid"></div>
+          <div class="boxTopShadow"></div>
+        </div>
+
+        <div class="bow"></div>
+      </div>
+
+      <div class="jar">
+        <div class="sparkle sparkle1"><span></span></div>
+        <div class="sparkle sparkle2"><span></span></div>
+        <div class="sparkle sparkle3"><span></span></div>
+        <div class="sparkle sparkle4"><span></span></div>
+        <div class="sparkle sparkle5"><span></span></div>
+        <div class="sparkle sparkle6"><span></span></div>
+        <div class="sparkle sparkle7"><span></span></div>
+        <div class="sparkle sparkle8"><span></span></div>
+        <div class="sparkle sparkle9"><span></span></div>
+        <div class="sparkle sparkle10"><span></span></div>
+
+        <svg
+          width="149"
+          height="149"
+          viewBox="0 0 149 149"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M37 131.5C36.3333 126.333 36.1 112.7 40.5 99.5M46 84C54.6667 63.8333 85.3 23.2 138.5 22"
+            stroke="black"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+
+      <div class="footerMask">
+        <div class="deskTop"></div>
+      </div>
+    </section>
+
+    <!-- Outline toggle for animation help -->
+    <div class="outlineToggle">
+      <input type="checkbox" id="outlineToggle" />
+      <label for="outlineToggle">Outlines</label>
     </div>
+  </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="scss">
 .curious-lamp-wrapper {
@@ -88,7 +96,6 @@
   $green1: #4ab666;
   $green2: #399150;
   $blue1: #3892e8;
-
 
   *::after,
   *::before {
@@ -510,76 +517,173 @@
   }
 
   @keyframes curvy {
-    0%   { transform: rotate(0deg); }
-    40%  { transform: rotate(0deg); }
-    50%  { transform: rotate(-3deg); }
-    60%  { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+      transform: rotate(0deg);
+    }
+    40% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-3deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
 
-  .lampStand { animation: rotate1 8s 3s infinite ease-in-out; }
+  .lampStand {
+    animation: rotate1 8s 3s infinite ease-in-out;
+  }
   @keyframes rotate1 {
-    0%   { transform: rotate(0deg); }
-    5%   { transform: rotate(-15deg); }
-    75%  { transform: rotate(-15deg); }
-    80%  { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+      transform: rotate(0deg);
+    }
+    5% {
+      transform: rotate(-15deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    80% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
 
-  .bar2 { animation: rotate2 8s 3s infinite ease-in-out;}
+  .bar2 {
+    animation: rotate2 8s 3s infinite ease-in-out;
+  }
   @keyframes rotate2 {
-    0%   { transform: rotate(45deg); }
-    5%   { transform: rotate(65deg); }
-    45%  { transform: rotate(65deg); }
-    50%  { transform: rotate(45deg); }
-    100% { transform: rotate(45deg); }
+    0% {
+      transform: rotate(45deg);
+    }
+    5% {
+      transform: rotate(65deg);
+    }
+    45% {
+      transform: rotate(65deg);
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(45deg);
+    }
   }
 
-  .rotator { animation: rotate3 8s 3s infinite ease-in-out;}
+  .rotator {
+    animation: rotate3 8s 3s infinite ease-in-out;
+  }
   @keyframes rotate3 {
-    0%   { transform: rotate(-100deg); }
-    5%   { transform: rotate(-130deg); }
-    45%  { transform: rotate(-130deg); }
-    50%  { transform: rotate(-100deg); }
-    100% { transform: rotate(-100deg); }
+    0% {
+      transform: rotate(-100deg);
+    }
+    5% {
+      transform: rotate(-130deg);
+    }
+    45% {
+      transform: rotate(-130deg);
+    }
+    50% {
+      transform: rotate(-100deg);
+    }
+    100% {
+      transform: rotate(-100deg);
+    }
   }
 
-  .bar4 { animation: rotate4 8s 3s infinite ease-in-out; }
+  .bar4 {
+    animation: rotate4 8s 3s infinite ease-in-out;
+  }
   @keyframes rotate4 {
-    0%   { transform: rotate(0deg); }
-    5%   { transform: rotate(30deg); }
-    45%  { transform: rotate(30deg); }
-    50%  { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+      transform: rotate(0deg);
+    }
+    5% {
+      transform: rotate(30deg);
+    }
+    45% {
+      transform: rotate(30deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
 
   .lampHead,
-  .cord2 { animation: eyeballing 8s infinite ease-in-out; }
+  .cord2 {
+    animation: eyeballing 8s infinite ease-in-out;
+  }
   @keyframes eyeballing {
-    0%   { transform: rotate(122deg); }
-    20%  { transform: rotate(80deg); }
-    50%  { transform: rotate(100deg); }
-    90%  { transform: rotate(90deg); }
-    100% { transform: rotate(122deg); }
+    0% {
+      transform: rotate(122deg);
+    }
+    20% {
+      transform: rotate(80deg);
+    }
+    50% {
+      transform: rotate(100deg);
+    }
+    90% {
+      transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(122deg);
+    }
   }
 
   @keyframes flicker {
-    0%   { opacity: 0; }
-    6%   { opacity: 0.3; }
-    11%  { opacity: 0; }
-    22%  { opacity: 0.3; }
-    38%  { opacity: 0.3; }
-    39%  { opacity: 0.035; }
-    42%  { opacity: 0.3; }
-    53%  { opacity: 0.36; }
-    60%  { opacity: 0.25; }
-    60%  { opacity: 0; }
-    73%  { opacity: 0.25; }
-    75%  { opacity: 0.1; }
-    79%  { opacity: 0.25; }
-    100% { opacity: 0.25; }
+    0% {
+      opacity: 0;
+    }
+    6% {
+      opacity: 0.3;
+    }
+    11% {
+      opacity: 0;
+    }
+    22% {
+      opacity: 0.3;
+    }
+    38% {
+      opacity: 0.3;
+    }
+    39% {
+      opacity: 0.035;
+    }
+    42% {
+      opacity: 0.3;
+    }
+    53% {
+      opacity: 0.36;
+    }
+    60% {
+      opacity: 0.25;
+    }
+    60% {
+      opacity: 0;
+    }
+    73% {
+      opacity: 0.25;
+    }
+    75% {
+      opacity: 0.1;
+    }
+    79% {
+      opacity: 0.25;
+    }
+    100% {
+      opacity: 0.25;
+    }
   }
-
 
   //////////////////////////
   // SPARKLES
@@ -589,9 +693,9 @@
     position: relative;
     width: 0;
     height: 0;
-    transform: scale(.25);
+    transform: scale(0.25);
     &::before,
-    &::after  {
+    &::after {
       content: "";
       width: 0;
       height: 0;
@@ -608,9 +712,9 @@
     }
     span {
       position: absolute;
-      transform: translate(5px,-5px);
+      transform: translate(5px, -5px);
       &::before,
-      &::after  {
+      &::after {
         content: "";
         width: 0;
         height: 0;
@@ -676,83 +780,179 @@
   .sparkle10 {
     animation: pulse1 8s ease-in-out infinite;
     left: 169px;
-    top: 50px
+    top: 50px;
   }
-
 
   @keyframes pulse1 {
-    0%   {transform: scale(0);}
-    06%  {transform: scale(0);}
-    10%  {transform: scale(.25);}
-    14%  {transform: scale(0);}
-    100% {transform: scale(0);}
+    0% {
+      transform: scale(0);
+    }
+    06% {
+      transform: scale(0);
+    }
+    10% {
+      transform: scale(0.25);
+    }
+    14% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+    }
   }
   @keyframes pulse2 {
-    0%   {transform: scale(0);}
-    8%  {transform: scale(0);}
-    12%  {transform: scale(.25);}
-    16%  {transform: scale(0);}
-    100% {transform: scale(0);}
+    0% {
+      transform: scale(0);
+    }
+    8% {
+      transform: scale(0);
+    }
+    12% {
+      transform: scale(0.25);
+    }
+    16% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+    }
   }
   @keyframes pulse3 {
-    0%   {transform: scale(0);}
-    10%  {transform: scale(0);}
-    14%  {transform: scale(.25);}
-    18%  {transform: scale(0);}
-    100% {transform: scale(0);}
+    0% {
+      transform: scale(0);
+    }
+    10% {
+      transform: scale(0);
+    }
+    14% {
+      transform: scale(0.25);
+    }
+    18% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+    }
   }
   @keyframes pulse4 {
-    0%   {transform: scale(0);}
-    36%  {transform: scale(0);}
-    40%  {transform: scale(.25);}
-    44%  {transform: scale(0);}
-    100% {transform: scale(0);}
+    0% {
+      transform: scale(0);
+    }
+    36% {
+      transform: scale(0);
+    }
+    40% {
+      transform: scale(0.25);
+    }
+    44% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+    }
   }
   @keyframes pulse5 {
-    0%   {transform: scale(0);}
-    51%  {transform: scale(0);}
-    55%  {transform: scale(.25);}
-    59%  {transform: scale(0);}
-    100% {transform: scale(0);}
+    0% {
+      transform: scale(0);
+    }
+    51% {
+      transform: scale(0);
+    }
+    55% {
+      transform: scale(0.25);
+    }
+    59% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+    }
   }
   @keyframes pulse6 {
-    0%   {transform: scale(0);}
-    56%  {transform: scale(0);}
-    60%  {transform: scale(.25);}
-    64%  {transform: scale(0);}
-    100% {transform: scale(0);}
+    0% {
+      transform: scale(0);
+    }
+    56% {
+      transform: scale(0);
+    }
+    60% {
+      transform: scale(0.25);
+    }
+    64% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+    }
   }
   @keyframes pulse7 {
-    0%   {transform: scale(0);}
-    66%  {transform: scale(0);}
-    70%  {transform: scale(.25);}
-    74%  {transform: scale(0);}
-    100% {transform: scale(0);}
+    0% {
+      transform: scale(0);
+    }
+    66% {
+      transform: scale(0);
+    }
+    70% {
+      transform: scale(0.25);
+    }
+    74% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+    }
   }
   @keyframes pulse8 {
-    0%   {transform: scale(0);}
-    71%  {transform: scale(0);}
-    75%  {transform: scale(.25);}
-    79%  {transform: scale(0);}
-    100% {transform: scale(0);}
+    0% {
+      transform: scale(0);
+    }
+    71% {
+      transform: scale(0);
+    }
+    75% {
+      transform: scale(0.25);
+    }
+    79% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+    }
   }
   @keyframes pulse9 {
-    0%   {transform: scale(0);}
-    54%  {transform: scale(0);}
-    58%  {transform: scale(.25);}
-    62%  {transform: scale(0);}
-    100% {transform: scale(0);}
+    0% {
+      transform: scale(0);
+    }
+    54% {
+      transform: scale(0);
+    }
+    58% {
+      transform: scale(0.25);
+    }
+    62% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+    }
   }
   @keyframes pulse10 {
-    0%   {transform: scale(0);}
-    31%  {transform: scale(0);}
-    35%  {transform: scale(.25);}
-    39%  {transform: scale(0);}
-    100% {transform: scale(0);}
+    0% {
+      transform: scale(0);
+    }
+    31% {
+      transform: scale(0);
+    }
+    35% {
+      transform: scale(0.25);
+    }
+    39% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+    }
   }
-
-
-
 
   // -------------------- Setup -----------------------
   html,
@@ -780,7 +980,9 @@
     right: 20px;
     bottom: 20px;
     z-index: 4;
-    input { display: none; }
+    input {
+      display: none;
+    }
     label {
       cursor: pointer;
       background: $gray2;
@@ -788,7 +990,7 @@
       display: block;
       padding: 1em;
       font-size: 11px;
-      transition: .2s;
+      transition: 0.2s;
       border-radius: 50%;
       display: flex;
       align-items: center;

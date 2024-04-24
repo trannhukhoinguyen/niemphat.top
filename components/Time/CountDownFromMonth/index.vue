@@ -3,11 +3,11 @@
 </template>
 
 <script setup lang="ts">
-let units = ['months', 'days', 'hours', 'minutes', 'seconds'];
+let units = ["months", "days", "hours", "minutes", "seconds"];
 
 let divElements = units.map((key: any, val, arr) => {
   let content = key;
-  key = document.createElement('div');
+  key = document.createElement("div");
   key.className = `${content} unit`;
   key.innerHTML = `${content}`;
   document.body.appendChild(key);
@@ -16,15 +16,14 @@ let divElements = units.map((key: any, val, arr) => {
 
 function countdown(divElements: any) {
   setInterval(() => {
-
     let timeNow = new Date();
 
     let monthsLeft = 6 - timeNow.getMonth();
     let daysLeft = 5 - timeNow.getDate() + 30;
     let hoursLeft;
-    if(timeNow.getHours() <= 14){
+    if (timeNow.getHours() <= 14) {
       hoursLeft = 14 - timeNow.getHours();
-    }else{
+    } else {
       hoursLeft = 14 - timeNow.getHours() + 24;
     }
     let minutesLeft = 59 + -timeNow.getMinutes();
@@ -34,7 +33,7 @@ function countdown(divElements: any) {
     divElements[2].dataset.content = hoursLeft;
     divElements[3].dataset.content = minutesLeft;
     divElements[4].dataset.content = secondsLeft;
-  }, 1000)
+  }, 1000);
 }
 
 let timer = countdown(divElements);
@@ -43,17 +42,17 @@ clearInterval(timer);
 
 <style scoped lang="scss">
 .count-down-from-month-wrapper {
-  @import url('https://fonts.googleapis.com/css?family=Space+Mono');
+  @import url("https://fonts.googleapis.com/css?family=Space+Mono");
 
   body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to left, #00d2ff , #3a7bd5);
+    background: linear-gradient(to left, #00d2ff, #3a7bd5);
     align-items: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    font-family: 'Space Mono', monospace;
+    font-family: "Space Mono", monospace;
   }
 
   .unit {

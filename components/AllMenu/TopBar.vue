@@ -1,30 +1,39 @@
 <template>
   <div class="top-bar-component">
     <UContainer>
-      <UHorizontalNavigation :links="topBarLinks" class="border-b border-gray-200 dark:border-gray-800">
-          <template #icon="{ link }">
-              <span class="group-hover:text-primary relative">{{ link?.icon }} &#68181;</span>
-          </template>
-          <template #default="{ link }">
-              <span class="group-hover:text-primary relative">{{ link?.label }}</span>
-          </template>
+      <UHorizontalNavigation
+        :links="topBarLinks"
+        class="border-b border-gray-200 dark:border-gray-800"
+      >
+        <template #icon="{ link }">
+          <span class="group-hover:text-primary relative"
+            >{{ link?.icon }} &#68181;</span
+          >
+        </template>
+        <template #default="{ link }">
+          <span class="group-hover:text-primary relative">{{
+            link?.label
+          }}</span>
+        </template>
       </UHorizontalNavigation>
       <ClientOnly>
-          <UButton
-                  :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
-                  color="gray"
-                  variant="ghost"
-                  aria-label="Theme"
-                  @click="isDark = !isDark"
-          />
-          <template #fallback>
-              <div class="w-8 h-8" />
-          </template>
+        <UButton
+          :icon="
+            isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'
+          "
+          color="gray"
+          variant="ghost"
+          aria-label="Theme"
+          @click="isDark = !isDark"
+        />
+        <template #fallback>
+          <div class="w-8 h-8" />
+        </template>
       </ClientOnly>
     </UContainer>
 
     <UContainer>
-<!--      <UDropdown :items="profileDropdown" :popper="{ placement: 'bottom-start' }">
+      <!--      <UDropdown :items="profileDropdown" :popper="{ placement: 'bottom-start' }">
         <UAvatar
             src="https://avatars.githubusercontent.com/u/739984?v=4"
             size="2xs"
@@ -39,41 +48,41 @@
 const topBarLinks = [
   [
     {
-      label: 'Home',
-      to: '/home',
+      label: "Home",
+      to: "/home",
     },
     {
-      label: 'Theme',
+      label: "Theme",
     },
   ],
   [
     {
-      label: 'Kinh Lăng Nghiêm',
-      to: '/sutras/kinh-lang-nghiem',
+      label: "Kinh Lăng Nghiêm",
+      to: "/sutras/kinh-lang-nghiem",
     },
     {
-      label: 'Kinh Diệu Pháp Liên Hoa',
-      to: '/sutras/the-wonderful-dharma-of-lotus-sutra',
+      label: "Kinh Diệu Pháp Liên Hoa",
+      to: "/sutras/the-wonderful-dharma-of-lotus-sutra",
     },
     {
-      label: 'Kinh Hoa Nghiêm',
-      to: '/sutras/kinh-hoa-nghiem',
+      label: "Kinh Hoa Nghiêm",
+      to: "/sutras/kinh-hoa-nghiem",
     },
     {
-      label: 'Lương Hoàng Sám',
-      to: '/repentances/compassionate-water-repentance-ritual',
+      label: "Lương Hoàng Sám",
+      to: "/repentances/compassionate-water-repentance-ritual",
     },
   ],
   [
     {
-      label: 'Thời Khóa Tu',
-      to: '/components/command-palette',
+      label: "Thời Khóa Tu",
+      to: "/components/command-palette",
     },
     {
-      label: 'Download / Tải xuống',
-      to: '/download-buddhism-documents',
+      label: "Download / Tải xuống",
+      to: "/download-buddhism-documents",
     },
-  ]
+  ],
 ];
 
 /*const profileDropdown = [
@@ -109,15 +118,15 @@ const topBarLinks = [
 ];*/
 
 // COLOR-MODE
-const colorMode = useColorMode()
+const colorMode = useColorMode();
 const isDark = computed({
-    get () {
-        return colorMode.value === 'dark'
-    },
-    set () {
-        colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
-    }
-})
+  get() {
+    return colorMode.value === "dark";
+  },
+  set() {
+    colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
+  },
+});
 </script>
 
 <style scoped lang="scss">
@@ -144,5 +153,3 @@ const isDark = computed({
   }
 }
 </style>
-
-

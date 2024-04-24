@@ -4,9 +4,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="scss">
 .floating-hearts-in-square-space-wrapper {
@@ -20,13 +18,17 @@
 
   .css-doodle::after,
   .css-doodle::before {
-    content: '';
+    content: "";
     position: absolute;
-    background: radial-gradient(circle, #51eaea, #fffde1, #ff9d76, #FB3569);
+    background: radial-gradient(circle, #51eaea, #fffde1, #ff9d76, #fb3569);
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    box-shadow: 0 0 50px rgba(81, 234, 234, 0.7), 0 0 50px rgba(255, 253, 225, 0.7), 0 0 50px rgba(255, 157, 118, 0.7), 0 0 50px rgba(251, 53, 105, 0.7);
+    box-shadow:
+      0 0 50px rgba(81, 234, 234, 0.7),
+      0 0 50px rgba(255, 253, 225, 0.7),
+      0 0 50px rgba(255, 157, 118, 0.7),
+      0 0 50px rgba(251, 53, 105, 0.7);
     animation: scale-up 12s linear infinite;
   }
 
@@ -41,7 +43,9 @@
   }
 
   @keyframes scale-up {
-    0%, 95.01%, 100% {
+    0%,
+    95.01%,
+    100% {
       transform: translateZ(0) rotate(0);
       opacity: 0;
     }
@@ -52,6 +56,5 @@
       transform: translateZ(35vmin) rotateZ(calc(-180deg + 180deg * random()));
     }
   }
-
 }
 </style>
