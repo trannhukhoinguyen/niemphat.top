@@ -85,7 +85,7 @@ $colors: (
   @for $n from 1 through 5 {
     .orb:nth-child(#{$n}) {
       animation: anim-#{$n} 7s infinite ease-in-out;
-      transform: rotate($n * 70deg) translate3d(150px,0,0);
+      transform: rotate($n * 72deg) translate3d(150px,0,0);
 
       &::after {
         background: radial-gradient(
@@ -99,9 +99,9 @@ $colors: (
     }
 
     @keyframes anim-#{$n} {
-      33% { transform: rotate($n * 50deg) translate3d(20px, 0, 0) rotateY(60deg); }
-      66% { transform: translate3d(20px, 0, 0) rotate($n * 70deg) rotateZ(180deg) rotateY(180deg); }
-      100% { transform: rotate($n * 50deg) translate3d(150px, 0, 0) rotateX(180deg); }
+      33% { transform: rotate($n * 72deg) translate3d(20px, 0, 0) rotateY(72deg); }
+      66% { transform: translate3d(20px, 0, 0) rotate($n * 72deg) rotateZ(180deg) rotateY(180deg); }
+      100% { transform: rotate($n * 72deg) translate3d(150px, 0, 0) rotateX(180deg); }
     }
   }
 }
@@ -124,8 +124,8 @@ $colors: (
     }
 
     @keyframes anim-#{$n} {
-      33% { transform: rotate($n * 50deg) translate3d(20px, 0, 0) rotateY(60deg); }
-      66% { transform: translate3d(20px, 0, 0) rotate($n * 90deg) rotateZ(180deg) rotateY(180deg); }
+      33% { transform: rotate($n * 50deg) translate3d(20px, 0, 0) rotateY(72deg); }
+      66% { transform: translate3d(20px, 0, 0) rotate($n * 50deg) rotateZ(180deg) rotateY(180deg); }
       100% { transform: rotate($n * 50deg) translate3d(150px, 0, 0) rotateX(180deg); }
     }
   }
