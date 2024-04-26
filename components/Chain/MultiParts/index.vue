@@ -1,19 +1,19 @@
 <template>
   <div class="multi-part-wrapper non-sentient-creature" v-if="quantity === 5">
-      <div class="orb" title="Đất"></div>
-      <div class="orb" title="Nước"></div>
-      <div class="orb" title="Gió"></div>
-      <div class="orb" title="Lửa"></div>
-      <div class="orb" title="Không"></div>
+      <div class="orb" title="Đất đại"></div>
+      <div class="orb" title="Nước đại"></div>
+      <div class="orb" title="Gió đại"></div>
+      <div class="orb" title="Lửa đại"></div>
+      <div class="orb" title="Không đại"></div>
   </div>
   <div class="multi-part-wrapper sentient-creature" v-if="quantity === 7">
-      <div class="orb" title="Đất"></div>
-      <div class="orb" title="Nước"></div>
+      <div class="orb" title="Đất đại"></div>
+      <div class="orb" title="Nước đại"></div>
       <div class="orb" title="Gió"></div>
-      <div class="orb" title="Lửa"></div>
-      <div class="orb" title="Không"></div>
-      <div class="orb" title="Kiến"></div>
-      <div class="orb" title="Thức"></div>
+      <div class="orb" title="Lửa đại"></div>
+      <div class="orb" title="Không đại"></div>
+      <div class="orb" title="Kiến đại"></div>
+      <div class="orb" title="Thức đại"></div>
   </div>
 </template>
 
@@ -29,13 +29,13 @@ const props = defineProps({
 
 <style scoped lang="scss">
 $colors: (
-        orb1: ( color1: #F09EA7, color2: #F09EA7, color3: #ff1055 ),
-        orb2: ( color1: #F6CA94, color2: #F6CA94, color3: #00f2ff ),
-        orb3: ( color1: #FAFABE, color2: #FAFABE, color3: #00ff77 ),
-        orb4: ( color1: #C1EBC0, color2: #C1EBC0, color3: #ffee00 ),
-        orb5: ( color1: #C7CAFF, color2: #C7CAFF, color3: #ff1055 ),
-        orb6: ( color1: #CDABEB, color2: #CDABEB, color3: #00f2ff ),
-        orb7: ( color1: #F6C2F3, color2: #F6C2F3, color3: #70369d ),
+        orb1: ( color1: #F8DEDE, color2: #F8DEDE, color3: red ),
+        orb2: ( color1: #FFEEE2, color2: #FFEEE2, color3: orange ),
+        orb3: ( color1: #FCFADE, color2: #FCFADE, color3: yellow ),
+        orb4: ( color1: #BEFAC0, color2: #BEFAC0, color3: green ),
+        orb5: ( color1: #BED0FA, color2: #BED0FA, color3: blue ),
+        orb6: ( color1: #E3A9F5, color2: #E3A9F5, color3: indigo ),
+        orb7: ( color1: #FBC4ED, color2: #FBC4ED, color3: violet ),
 );
 @function getColor($orb, $color) {
   @return map-get(map-get($colors, $orb), $color);
@@ -68,10 +68,6 @@ $colors: (
       right: 0;
       bottom: 0;
       left: 0;
-    }
-
-    &::before {
-      // background: #09061b;
     }
 
     &::after {

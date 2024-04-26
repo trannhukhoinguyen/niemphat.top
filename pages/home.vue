@@ -5,7 +5,12 @@
               :isPinkLotus="false"
       />
       <Lotus />-->
-      <MultiParts :quantity="5" style="margin-top: 200px; margin-left: 800px;"/>
+    <div style="margin-top: 100px; margin-left: 200px;">
+      <MultiParts :quantity="7"/>
+    </div>
+    <div style="margin-top: 100px; margin-left: 800px;">
+      <MultiParts :quantity="5"/>
+    </div>
   </div>
 </template>
 
