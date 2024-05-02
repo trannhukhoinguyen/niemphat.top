@@ -1,12 +1,6 @@
 <template>
   <div class="none-layout">
     <slot />
-    <!--    <footer class="layout-footer" style="padding: 0px">
-      <p>Nguyện sanh Tây-phương Tịnh độ trung</p>
-            <p>Cửu phẩm Liên hoa vi phụ mẫu</p>
-            <p>Hoa khai kiến Phật ngộ Vô sanh</p>
-            <p>Bất thối Bồ-tát vi bạn lữ</p>
-    </footer>-->
   </div>
 </template>
 

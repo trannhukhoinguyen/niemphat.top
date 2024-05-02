@@ -1,5 +1,5 @@
 <template>
-  <div class="lotus-wrapper">
+  <div class="lotus-wrapper" :style="{top: top, left: left}">
     <div class="lotus">
       <ul>
         <!-- Repeat 8 times -->
@@ -168,7 +168,7 @@
         >
           <stop offset="0%" stop-color="#FCFDF2" />
           <stop offset="50%" stop-color="yellow" v-if="isYellowLotus" />
-          <stop offset="100%" stop-color="#E9BABA" v-if="isPinkLotus" />
+          <stop offset="100%" stop-color="#DB87D4" v-if="isPinkLotus" />
         </radialGradient>
         <filter id="dropShadow1">
           <feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.4" />
@@ -188,11 +188,22 @@ const props = defineProps({
     type: Boolean,
     default: true,
   },
+  top: {
+    type: String,
+    default: true,
+  },
+  left: {
+    type: String,
+    default: true,
+  },
 });
 </script>
 
 <style lang="scss" scoped>
 .lotus-wrapper {
+  position: relative;
+  z-index: 2;
+
   body {
     width: 33%;
     perspective: 1000px;
@@ -230,12 +241,12 @@ const props = defineProps({
     position: absolute;
     top: calc(50% - 18px);
     left: calc(50% - 18px);
-    width: 36px;
-    height: 36px;
+    width: 18px;
+    height: 18px;
     ul {
       position: relative;
-      width: 36px;
-      height: 36px;
+      width: 18px;
+      height: 18px;
     }
     li {
       position: absolute;
@@ -257,7 +268,7 @@ const props = defineProps({
           }
         }
         svg {
-          width: 72px;
+          width: 36px;
           transform: rotateX(75deg);
           animation: bloom 1000ms cubic-bezier(0, 0.75, 0.25, 1) forwards;
         }
@@ -273,7 +284,7 @@ const props = defineProps({
           }
         }
         svg {
-          width: 60px;
+          width: 30px;
           transform: rotateX(60deg);
           animation: bloom 1100ms cubic-bezier(0, 0.75, 0.25, 1) 150ms forwards;
         }
@@ -289,7 +300,7 @@ const props = defineProps({
           }
         }
         svg {
-          width: 48px;
+          width: 24px;
           transform: rotateX(30deg);
           animation: bloom 1200ms cubic-bezier(0, 0.75, 0.25, 1) 300ms forwards;
         }
