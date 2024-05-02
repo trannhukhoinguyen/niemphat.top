@@ -1,3 +1,9 @@
+<template>
+    <button class="buttonPlayer">
+        <img class="buttonPlayer__icon" :src="path" :alt="icon" />
+    </button>
+</template>
+
 <script setup lang="ts">
 const { icon } = defineProps({
   icon: {
@@ -17,12 +23,6 @@ const { icon } = defineProps({
 const path = `/images/${icon}.png`
 </script>
 
-<template>
-  <button class="buttonPlayer">
-    <img class="buttonPlayer__icon" :src="path" :alt="icon" />
-  </button>
-</template>
-
 <style lang="scss" scoped>
 .buttonPlayer {
   display: flex;
@@ -32,7 +32,7 @@ const path = `/images/${icon}.png`
   justify-content: center;
   margin-left: v-bind(marginX);
   margin-right: v-bind(marginX);
-  box-shadow: 8px 8px 14px variables.$shadow-color;
+  //box-shadow: 8px 8px 14px variables.$shadow-color;
 
   @media screen and (max-width: 1200px) {
     padding: 1rem;

@@ -21,16 +21,37 @@
     </div>
 
 
-    <Video dataId="WEx9YgMj4p0" />
+    <div class="home">
+        <MusicPlayer />
+        <SongList :songs="getSongs" />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { storeToRefs } from 'pinia'
+import { useHomeStore } from '../stores/Home'
+import SongList from '../components/Players/Audio/Music/SongList.vue'
+import MusicPlayer from '../components/Players/Audio/Music/MusicPlayer.vue'
 
+const homeStore = useHomeStore()
+const { getSongs } = storeToRefs(homeStore)
 </script>
 
 <style scoped lang="scss">
 .home-page {
+  .home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: 1600px;
+    max-height: 824px;
+    justify-content: space-between;
 
+    @media screen and (max-width: 1200px) {
+      max-height: initial;
+      justify-content: center;
+    }
+  }
 }
 </style>

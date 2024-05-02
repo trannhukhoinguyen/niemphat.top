@@ -14,13 +14,13 @@
   padding: 1rem;
   border-radius: 20px;
   margin-bottom: 2rem;
-  box-shadow: 8px 8px 14px variables.$shadow-color;
+  //box-shadow: 8px 8px 14px variables.$shadow-color;
   animation: loading 1s steps(10, end) infinite alternate;
 
   &__name,
   &__artist,
   &__thumbnail {
-    background-color: variables.$shadow-color;
+    //background-color: variables.$shadow-color;
   }
 
   &__thumbnail {

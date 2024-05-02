@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
-import { getAllSongs } from '@/services/songs'
-import { Song } from '@/interfaces/Song'
+import { getAllSongs } from '../services/songs'
+import { Song } from '../interfaces/Song'
 import { Howl } from 'howler'
 
 interface HomeStore {
