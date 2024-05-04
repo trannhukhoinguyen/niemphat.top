@@ -15,7 +15,7 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
 import { ref, watchEffect } from 'vue'
-import { useHomeStore } from '@/store/Home'
+import { useHomeStore } from '../stores/Home'
 
 const homeStore = useHomeStore()
 const { currentSectionsSong, durationSong } = storeToRefs(homeStore)
@@ -44,8 +44,8 @@ watchEffect(() => {
   padding: 16px 10px;
   border-radius: 20px;
   margin-bottom: 2rem;
-  background: variables.$background-color;
-  box-shadow: 8px 8px 14px variables.$shadow-color;
+  //background: variables.$background-color;
+  //box-shadow: 8px 8px 14px variables.$shadow-color;
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -62,11 +62,11 @@ watchEffect(() => {
     box-shadow: none;
     border-radius: 20px;
     transition: background 0.3s ease-in-out;
-    background: linear-gradient(
-      165deg,
-      variables.$primary-color,
-      variables.$secondary-color
-    );
+    //background: linear-gradient(
+    //  165deg,
+    //  variables.$primary-color,
+    //  variables.$secondary-color
+    //);
     background-size: v-bind(runnable);
     background-repeat: no-repeat;
   }

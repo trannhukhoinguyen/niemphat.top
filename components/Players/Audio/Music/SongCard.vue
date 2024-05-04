@@ -10,8 +10,8 @@
 
 <script setup lang="ts">
 import { PropType } from 'vue'
-import { Song } from '@/interfaces/Song'
-import { useHomeStore } from '@/store/Home'
+import { Song } from '../interfaces/Song'
+import { useHomeStore } from '../stores/Home'
 
 defineProps({
   song: {
@@ -30,7 +30,7 @@ const { playNewSong } = useHomeStore()
   cursor: pointer;
   border-radius: 20px;
   margin-bottom: 2rem;
-  box-shadow: 8px 8px 14px variables.$shadow-color;
+  //box-shadow: 8px 8px 14px variables.$shadow-color;
 
   &__thumbnail {
     width: 60px;
@@ -43,7 +43,7 @@ const { playNewSong } = useHomeStore()
     padding-left: 1rem;
     flex-direction: column;
     justify-content: space-evenly;
-    color: variables.$primary-color-text;
+    //color: variables.$primary-color-text;
   }
 
   &__name {

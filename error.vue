@@ -1,4 +1,8 @@
 <template>
+  <div class="error-page-wrapper">
+      <UButton loading>Button</UButton>
+
+  </div>
   <div flex="~ col" h-screen text-center items-center justify-center gap4>
     <div text-3xl>
       {{ is404 ? "This page could not be found" : "An error occurred" }}

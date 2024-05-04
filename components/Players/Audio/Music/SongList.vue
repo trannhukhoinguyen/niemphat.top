@@ -13,8 +13,8 @@
 
 <script setup lang="ts">
 import { PropType } from 'vue'
-import { Song } from '@/interfaces/Song'
-import SongCard from '@/components/SongCard.vue'
+import { Song } from '../interfaces/Song'
+import SongCard from './SongCard.vue'
 import SongCardSkeleton from './SongCardSkeleton.vue'
 
 defineProps({
@@ -34,7 +34,7 @@ defineProps({
   padding-top: 3rem;
   padding-bottom: 3rem;
   flex-direction: column;
-  background-color: variables.$background-color;
+  //background-color: variables.$background-color;
 
   @media screen and (max-width: 1200px) {
     display: none;

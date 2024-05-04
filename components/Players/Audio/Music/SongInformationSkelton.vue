@@ -21,7 +21,7 @@
   &__image,
   &__name,
   &__artist {
-    background-color: variables.$shadow-color;
+    //background-color: variables.$shadow-color;
   }
 
   &__image {
